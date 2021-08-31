@@ -7,10 +7,10 @@ export function ProjectCard({ imgSrc, altTxt, children }) {
                 <figure>
                     <Image
                         alt={altTxt}
-                        src={imgSrc}
-                        layout="responsive"
-                        width={1920}
                         height={1080}
+                        layout="responsive"
+                        src={imgSrc}
+                        width={1920}
                     />
                 </figure>
             )}

@@ -89,7 +89,10 @@ export default function Home() {
                 </CollapseAlwaysOpen>
                 <CollapseAlwaysOpen title="$ cat /home/red/projects.html">
                     <div className="grid grid-cols-3 w-3/4 m-auto gap-x-5 gap-y-8">
-                        <ProjectCard altTxt="Guy Fawkes mask because I don't have a logo for the project..." imgSrc={AnonSVG}>
+                        <ProjectCard
+                            altTxt="Guy Fawkes mask because I don't have a logo for the project..."
+                            imgSrc={AnonSVG}
+                        >
                             <CardTitle>
                                 {'RedFox32'}
                                 <br />
@@ -102,7 +105,10 @@ export default function Home() {
                                 {'Project on GitHub'}
                             </CardButton>
                         </ProjectCard>
-                        <ProjectCard altTxt="Margarita Humanitarian Foundation Logo - A planet and heart with the letters M H F" imgSrc={MHFLogo}>
+                        <ProjectCard
+                            altTxt="Margarita Humanitarian Foundation Logo - A planet and heart with the letters M H F"
+                            imgSrc={MHFLogo}
+                        >
                             <CardTitle>
                                 {'Margarita Humanitarian Foundation'}
                             </CardTitle>
@@ -116,9 +122,13 @@ export default function Home() {
                                 {'Project on GitHub'}
                             </CardButton>
                         </ProjectCard>
-                        <ProjectCard altTxt="The GitHub octo-cat logo" imgSrc={GitHubLogo}>
+                        <ProjectCard
+                            altTxt="The GitHub octo-cat logo"
+                            imgSrc={GitHubLogo}
+                        >
                             <CardTitle>
-                                {'Projects on GitHub'}<br />
+                                {'Projects on GitHub'}
+                                <br />
                                 <span className="invisible">{'_'}</span>
                             </CardTitle>
                             <CardDescription>
