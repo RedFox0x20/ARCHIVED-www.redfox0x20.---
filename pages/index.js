@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Image from 'next/image';
 
 import {
     CardButton,
@@ -15,7 +14,6 @@ import MainSection from '../components/main';
 import AnonSVG from '../public/anon.svg';
 import GitHubLogo from '../public/GitHub.svg';
 import MHFLogo from '../public/MHF-Color.svg';
-import PlaceHolderImage from '../public/placeholder.png';
 
 export default function Home() {
     return (
