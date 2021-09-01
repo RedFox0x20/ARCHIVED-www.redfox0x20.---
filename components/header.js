@@ -8,8 +8,10 @@ export default function Header() {
             </div>
             <div className="flex-1 px-2 mx-2">
                 <div className="items-stretch hidden md:flex">
-                    <Link href="/">
-                        <span className="btn btn-ghost btn-sm rounded-btn">{'Home'}</span>
+                    <Link href="/" passHref>
+                        <span className="btn btn-ghost btn-sm rounded-btn">
+                            {'Home'}
+                        </span>
                     </Link>
                     <a
                         className="btn btn-ghost btn-sm rounded-btn"
