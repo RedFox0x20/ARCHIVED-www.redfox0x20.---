@@ -1,2 +1,4 @@
 #!/bin/sh
-/usr/bin/yarn --cwd /srv/www/redfox0x20.xyz production
+cd /srv/www/redfox0x20.xyz
+/usr/bin/git pull
+/usr/bin/yarn production
