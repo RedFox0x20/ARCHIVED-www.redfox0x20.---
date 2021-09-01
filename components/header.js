@@ -6,8 +6,18 @@ export default function Header() {
             </div>
             <div className="flex-1 px-2 mx-2">
                 <div className="items-stretch hidden md:flex">
-                    <a className="btn btn-ghost btn-sm rounded-btn">{'Home'}</a>
-                    <a className="btn btn-ghost btn-sm rounded-btn">
+                    <a
+                        className="btn btn-ghost btn-sm rounded-btn"
+                        href="/"
+                        target="_blank"
+                    >
+                        {'Home'}
+                    </a>
+                    <a
+                        className="btn btn-ghost btn-sm rounded-btn"
+                        href="https://m7tws.redfox0x20.xyz/"
+                        target="_blank"
+                    >
                         {'Amateur Radio'}
                     </a>
                 </div>
