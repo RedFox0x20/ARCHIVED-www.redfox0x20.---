@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "production": "yarn install --prod && yarn build && yarn start"
   },
   "dependencies": {
     "daisyui": "^1.14.0",
