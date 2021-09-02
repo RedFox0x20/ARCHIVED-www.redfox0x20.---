@@ -26,7 +26,6 @@
     }
   },
   "rules": {
-    "comma-dangle": ["error", "always-multiline"],
     "prefer-template": ["error"],
     "react/button-has-type": ["error"],
     "react/jsx-max-depth": ["off"],

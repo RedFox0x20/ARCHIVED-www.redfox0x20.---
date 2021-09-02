@@ -10,7 +10,7 @@ class MyDocument extends Document {
         return (
             <Html data-theme="dracula" lang="en-us">
                 <Head />
-                <body className="min-h-screen">
+                <body>
                     <Main />
                     <NextScript />
                 </body>

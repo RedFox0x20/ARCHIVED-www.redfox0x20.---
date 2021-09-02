@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="footer align-bottom bg-neutral text-neutral-content rounded-box p-10 mt-2">
+        <footer className="footer align-bottom bg-neutral text-neutral-content p-10 mt-2">
             <div>
                 <svg
                     className="fill-current"
