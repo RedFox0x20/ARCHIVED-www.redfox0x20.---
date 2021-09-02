@@ -27,19 +27,19 @@ export function SecondaryBadge({ children }) {
 }
 
 export default function Badges({ reverse = false, newlines = true, children }) {
-    function MapBadges({ reverse }) {
+    function MapBadges() {
         return (
             <>
-                {BadgeList.map((primary, primary_idx) => {
+                {BadgeList.map((BadgeRow, BadgeRowIdx) => {
                     return (
                         <>
-                            {!reverse && primary.primary && (
-                                <PrimaryBadge key={primary_idx.toString()}>
-                                    {primary.primary}
+                            {!reverse && BadgeRow.primary && (
+                                <PrimaryBadge key={BadgeRowIdx.toString()}>
+                                    {BadgeRow.primary}
                                 </PrimaryBadge>
                             )}
-                            {primary.secondary &&
-                                primary.secondary.map(
+                            {BadgeRow.secondary &&
+                                BadgeRow.secondary.map(
                                     (secondary_item, secondary_idx) => {
                                         return (
                                             <SecondaryBadge
@@ -50,8 +50,10 @@ export default function Badges({ reverse = false, newlines = true, children }) {
                                         );
                                     }
                                 )}
-                            {reverse && primary.primary && (
-                                <PrimaryBadge>{primary.primary}</PrimaryBadge>
+                            {reverse && BadgeRow.primary && (
+                                <PrimaryBadge key={BadgeRowIdx.toString()}>
+                                    {BadgeRow.primary}
+                                </PrimaryBadge>
                             )}
                             {newlines && <br />}
                         </>
