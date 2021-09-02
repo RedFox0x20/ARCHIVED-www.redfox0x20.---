@@ -5,13 +5,13 @@ export function ProjectCard({ imgSrc, altTxt, children }) {
         <div className="card bordered shadow-2xl p-5 flex">
             {imgSrc && (
                 <div className="content-center w-3/12 lg:w-6/12 m-auto">
-                        <Image
-                            alt={altTxt}
-                            height={32}
-                            layout="responsive"
-                            src={imgSrc}
-                            width={32}
-                        />
+                    <Image
+                        alt={altTxt}
+                        height={32}
+                        layout="responsive"
+                        src={imgSrc}
+                        width={32}
+                    />
                 </div>
             )}
             <div className="card-body flex p-0 md:p-4">{children}</div>
