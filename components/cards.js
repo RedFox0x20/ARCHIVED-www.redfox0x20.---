@@ -4,16 +4,14 @@ export function ProjectCard({ imgSrc, altTxt, children }) {
     return (
         <div className="card bordered shadow-2xl p-5 flex">
             {imgSrc && (
-                <div className="h-64 content-center">
-                    <figure>
+                <div className="content-center w-3/12 lg:w-6/12 m-auto">
                         <Image
                             alt={altTxt}
-                            height={1080}
+                            height={32}
                             layout="responsive"
                             src={imgSrc}
-                            width={1920}
+                            width={32}
                         />
-                    </figure>
                 </div>
             )}
             <div className="card-body flex p-0 md:p-4">{children}</div>
@@ -23,7 +21,7 @@ export function ProjectCard({ imgSrc, altTxt, children }) {
 
 export function CardTitle({ children }) {
     return (
-        <h2 className="card-title justify-self-start text-center">
+        <h2 className="card-title justify-self-start text-center mt-3">
             {children}
         </h2>
     );
@@ -36,7 +34,7 @@ export function CardDescription({ children }) {
 export function CardButton({ linkTo, children }) {
     return (
         <a
-            className="btn mt-5 h-16 xl:h-12"
+            className="btn mt-5 h-auto xl:h-12"
             href={linkTo}
             rel="noreferrer"
             target="_blank"

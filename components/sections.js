@@ -18,14 +18,14 @@ export function ContentSection({ children }) {
 
 export function SectionTitle({ children }) {
     return (
-        <h1 className="text-5xl text-left underline mb-5 sm:mb-0">
+        <h1 className="text-xl md:text-5xl text-left underline mb-5 sm:mb-0">
             {children}
         </h1>
     );
 }
 
 export function SectionDescription({ children }) {
-    return <p className="text-2xl mb-5">{children}</p>;
+    return <p className="text-lg md:text-2xl mb-5">{children}</p>;
 }
 
 export function SectionContent({ children }) {

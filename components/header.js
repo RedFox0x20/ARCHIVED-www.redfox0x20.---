@@ -7,7 +7,7 @@ const NavbarLinks = [
 
 export default function Header() {
     return (
-        <div className="navbar mb-2 shadow-lg bg-neutral text-neutral-content sticky top-0 z-50 drop-shadow-2xl">
+        <div className="navbar mb-2 shadow-lg bg-neutral text-neutral-content lg:sticky lg:top-0 lg:z-50 drop-shadow-2xl">
             <div className="flex-none px-2 mx-2">
                 <span className="text-lg font-bold">{'RedFox0x20'}</span>
             </div>
