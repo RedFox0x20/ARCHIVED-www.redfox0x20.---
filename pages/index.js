@@ -15,7 +15,7 @@ import ProjectCards from '../components/projectcards';
 
 export default function Home() {
     return (
-        <div>
+        <>
             <Head>
                 <title>{'RedFox0x20'}</title>
                 <meta
@@ -52,6 +52,6 @@ export default function Home() {
             </MainSection>
 
             <Footer />
-        </div>
+        </>
     );
 }
