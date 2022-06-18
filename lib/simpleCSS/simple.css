@@ -1,0 +1,5734 @@
+/*
+ * simple.css
+ * A generic set of CSS classes
+ * redfox0x20.xyz
+ */
+
+:root {
+    --v-colour-primary: rgb(222, 135, 232);
+    --v-colour-secondary: rgb(131, 215, 213);
+    --v-colour-tertiary: rgb(225, 143, 143);
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-family: monospace, sans-serif;
+    color: white;
+    background-color: transparent;
+}
+
+body {
+    background-color: black;
+    /* min-height: 100vh; */
+}
+
+/* Headers */
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    line-height: 2;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    margin: 0px 0.5rem 0px 0.5rem;
+}
+
+h1,
+.h1 {
+    font-size: 2em;
+    color: var(--v-colour-primary);
+}
+
+h2,
+.h2 {
+    color: var(--v-colour-secondary);
+}
+
+/* Text elements */
+p {
+    margin: 0px 1rem 1rem 1rem;
+    line-height: 1.25;
+}
+
+a {
+    cursor: grab;
+}
+
+/* Images */
+
+img {
+    margin: 10px;
+    border: solid white 2px;
+    border-radius: 25px;
+}
+
+figure {
+    width: min-content;
+    margin: 10px;
+    border: solid white 2px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+figcaption {
+    margin: 10px;
+}
+
+figure>img {
+    border: none;
+    border-bottom: 2px solid white;
+    margin: 0px;
+}
+@media only screen and ((max-width:600px) or (max-height:600px)) { 
+/*
+ * fixed_rules.sm\:css
+ * Contains all of the fixed rules
+ */
+/* Generic colouring rules */
+
+.sm\:fg-primary {
+    color: var(--v-colour-primary);
+}
+
+.sm\:fg-secondary {
+    color: var(--v-colour-secondary);
+}
+
+.sm\:fg-tertiary {
+    color: var(--v-colour-tertiary);
+}
+
+.sm\:bg-primary {
+    background-color: var(--v-colour-primary);
+}
+
+.sm\:bg-secondary {
+    background-color: var(--v-colour-secondary);
+}
+
+.sm\:bg-tertiary {
+    background-color: var(--v-colour-tertiary);
+}
+
+/* Margins */
+.sm\:margin-auto {
+    margin: auto;
+}
+
+.sm\:margin-left-auto {
+    margin-left: auto;
+}
+
+.sm\:margin-right-auto {
+    margin-right: auto;
+}
+
+.sm\:margin-top-auto {
+    margin-top: auto;
+}
+
+.sm\:margin-bottom-auto {
+    margin-top: auto;
+}
+
+.sm\:margin-none {
+    margin: 0px;
+}
+
+.sm\:margin-left-none {
+    margin-left: 0px;
+}
+
+.sm\:margin-right-none {
+    margin-right: 0px;
+}
+
+.sm\:margin-top-none {
+    margin-top: 0px;
+}
+
+.sm\:margin-bottom-none {
+    margin-bottom: 0px;
+}
+
+/* Custom UI Element classes */
+
+.sm\:link {
+    color: var(--v-colour-tertiary);
+}
+
+
+.sm\:button-wrapper {
+    margin: 5px;
+}
+
+.sm\:button {
+    /* border: solid white 2px; */
+    border-radius: 1em;
+    border: solid var(--v-colour-tertiary) 2px;
+    line-height: 2;
+    cursor: grab;
+    margin: 1rem;
+}
+
+.sm\:button:hover {
+    background-color: rgba(225, 216, 216, 0.sm\:312);
+}
+
+.sm\:button-text {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+img.sm\:image-round {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+img.sm\:profile-img-small {
+    width: 50px;
+    height: 50px;
+}
+
+img.sm\:profile-img-medium {
+    width: 100px;
+    height: 100px;
+}
+
+img.sm\:profile-img-large {
+    width: 150px;
+    height: 150px;
+}
+
+/* Borders */
+.sm\:border-primary-2px {
+    border: solid var(--v-colour-primary) 2px;
+}
+
+.sm\:border-secondary-2px {
+    border: solid var(--v-colour-secondary) 2px;
+}
+
+.sm\:border-tertiary-2px {
+    border: solid var(--v-colour-tertiary) 2px;
+}
+
+.sm\:border-white-2px {
+    border: solid white 2px;
+}
+
+/* Layouts */
+
+.sm\:inline-block {
+    display: inline-block;
+}
+
+.sm\:inline-flex {
+    display: inline-flex;
+}
+
+.sm\:container-flex {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+
+}
+
+.sm\:flex-justify-center {
+    justify-content: center;
+}
+
+.sm\:flex-justifty-left {
+    justify-content: left;
+}
+
+.sm\:flex-justify-right {
+    justify-content: right;
+}
+
+.sm\:flex-align-center {
+    align-items: center;
+}
+
+.sm\:flex-align-start {
+    align-items: flex-start;
+}
+
+.sm\:align-center {
+    text-align: center;
+}
+
+.sm\:align-left {
+    text-align: left;
+}
+
+.sm\:align-right {
+    text-align: right;
+} /* GENERATED 
+ * generator_rules.sm\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.sm\:css */
+
+.sm\:margin-5vw {
+    margin: 5vw;
+}
+
+.sm\:margin-left-5vw {
+    margin-left: 5vw;
+}
+
+.sm\:margin-right-5vw {
+    margin-right: 5vw;
+}
+
+.sm\:margin-top-5vw {
+    margin-top: 5vw;
+}
+
+.sm\:margin-bottom-5vw {
+    margin-bottom: 5vw;
+}
+
+/* Width */
+.sm\:width-5vw {
+    width: 5vw;
+}
+
+.sm\:min-width-5vw {
+    min-width: 5vw;
+}
+
+.sm\:max-width-5vw {
+    max-width: 5vw;
+}
+
+/* Height */
+
+.sm\:height-5vw {
+    height: 5vw;
+}
+
+.sm\:min-height-5vw {
+    min-height: 5vw;
+}
+
+.sm\:max-height-5vw {
+    max-height: 5vw;
+} /* GENERATED 
+ * generator_rules.sm\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.sm\:css */
+
+.sm\:margin-10vw {
+    margin: 10vw;
+}
+
+.sm\:margin-left-10vw {
+    margin-left: 10vw;
+}
+
+.sm\:margin-right-10vw {
+    margin-right: 10vw;
+}
+
+.sm\:margin-top-10vw {
+    margin-top: 10vw;
+}
+
+.sm\:margin-bottom-10vw {
+    margin-bottom: 10vw;
+}
+
+/* Width */
+.sm\:width-10vw {
+    width: 10vw;
+}
+
+.sm\:min-width-10vw {
+    min-width: 10vw;
+}
+
+.sm\:max-width-10vw {
+    max-width: 10vw;
+}
+
+/* Height */
+
+.sm\:height-10vw {
+    height: 10vw;
+}
+
+.sm\:min-height-10vw {
+    min-height: 10vw;
+}
+
+.sm\:max-height-10vw {
+    max-height: 10vw;
+} /* GENERATED 
+ * generator_rules.sm\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.sm\:css */
+
+.sm\:margin-20vw {
+    margin: 20vw;
+}
+
+.sm\:margin-left-20vw {
+    margin-left: 20vw;
+}
+
+.sm\:margin-right-20vw {
+    margin-right: 20vw;
+}
+
+.sm\:margin-top-20vw {
+    margin-top: 20vw;
+}
+
+.sm\:margin-bottom-20vw {
+    margin-bottom: 20vw;
+}
+
+/* Width */
+.sm\:width-20vw {
+    width: 20vw;
+}
+
+.sm\:min-width-20vw {
+    min-width: 20vw;
+}
+
+.sm\:max-width-20vw {
+    max-width: 20vw;
+}
+
+/* Height */
+
+.sm\:height-20vw {
+    height: 20vw;
+}
+
+.sm\:min-height-20vw {
+    min-height: 20vw;
+}
+
+.sm\:max-height-20vw {
+    max-height: 20vw;
+} /* GENERATED 
+ * generator_rules.sm\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.sm\:css */
+
+.sm\:margin-25vw {
+    margin: 25vw;
+}
+
+.sm\:margin-left-25vw {
+    margin-left: 25vw;
+}
+
+.sm\:margin-right-25vw {
+    margin-right: 25vw;
+}
+
+.sm\:margin-top-25vw {
+    margin-top: 25vw;
+}
+
+.sm\:margin-bottom-25vw {
+    margin-bottom: 25vw;
+}
+
+/* Width */
+.sm\:width-25vw {
+    width: 25vw;
+}
+
+.sm\:min-width-25vw {
+    min-width: 25vw;
+}
+
+.sm\:max-width-25vw {
+    max-width: 25vw;
+}
+
+/* Height */
+
+.sm\:height-25vw {
+    height: 25vw;
+}
+
+.sm\:min-height-25vw {
+    min-height: 25vw;
+}
+
+.sm\:max-height-25vw {
+    max-height: 25vw;
+} /* GENERATED 
+ * generator_rules.sm\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.sm\:css */
+
+.sm\:margin-33vw {
+    margin: 33vw;
+}
+
+.sm\:margin-left-33vw {
+    margin-left: 33vw;
+}
+
+.sm\:margin-right-33vw {
+    margin-right: 33vw;
+}
+
+.sm\:margin-top-33vw {
+    margin-top: 33vw;
+}
+
+.sm\:margin-bottom-33vw {
+    margin-bottom: 33vw;
+}
+
+/* Width */
+.sm\:width-33vw {
+    width: 33vw;
+}
+
+.sm\:min-width-33vw {
+    min-width: 33vw;
+}
+
+.sm\:max-width-33vw {
+    max-width: 33vw;
+}
+
+/* Height */
+
+.sm\:height-33vw {
+    height: 33vw;
+}
+
+.sm\:min-height-33vw {
+    min-height: 33vw;
+}
+
+.sm\:max-height-33vw {
+    max-height: 33vw;
+} /* GENERATED 
+ * generator_rules.sm\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.sm\:css */
+
+.sm\:margin-50vw {
+    margin: 50vw;
+}
+
+.sm\:margin-left-50vw {
+    margin-left: 50vw;
+}
+
+.sm\:margin-right-50vw {
+    margin-right: 50vw;
+}
+
+.sm\:margin-top-50vw {
+    margin-top: 50vw;
+}
+
+.sm\:margin-bottom-50vw {
+    margin-bottom: 50vw;
+}
+
+/* Width */
+.sm\:width-50vw {
+    width: 50vw;
+}
+
+.sm\:min-width-50vw {
+    min-width: 50vw;
+}
+
+.sm\:max-width-50vw {
+    max-width: 50vw;
+}
+
+/* Height */
+
+.sm\:height-50vw {
+    height: 50vw;
+}
+
+.sm\:min-height-50vw {
+    min-height: 50vw;
+}
+
+.sm\:max-height-50vw {
+    max-height: 50vw;
+} /* GENERATED 
+ * generator_rules.sm\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.sm\:css */
+
+.sm\:margin-75vw {
+    margin: 75vw;
+}
+
+.sm\:margin-left-75vw {
+    margin-left: 75vw;
+}
+
+.sm\:margin-right-75vw {
+    margin-right: 75vw;
+}
+
+.sm\:margin-top-75vw {
+    margin-top: 75vw;
+}
+
+.sm\:margin-bottom-75vw {
+    margin-bottom: 75vw;
+}
+
+/* Width */
+.sm\:width-75vw {
+    width: 75vw;
+}
+
+.sm\:min-width-75vw {
+    min-width: 75vw;
+}
+
+.sm\:max-width-75vw {
+    max-width: 75vw;
+}
+
+/* Height */
+
+.sm\:height-75vw {
+    height: 75vw;
+}
+
+.sm\:min-height-75vw {
+    min-height: 75vw;
+}
+
+.sm\:max-height-75vw {
+    max-height: 75vw;
+} /* GENERATED 
+ * generator_rules.sm\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.sm\:css */
+
+.sm\:margin-5vh {
+    margin: 5vh;
+}
+
+.sm\:margin-left-5vh {
+    margin-left: 5vh;
+}
+
+.sm\:margin-right-5vh {
+    margin-right: 5vh;
+}
+
+.sm\:margin-top-5vh {
+    margin-top: 5vh;
+}
+
+.sm\:margin-bottom-5vh {
+    margin-bottom: 5vh;
+}
+
+/* Width */
+.sm\:width-5vh {
+    width: 5vh;
+}
+
+.sm\:min-width-5vh {
+    min-width: 5vh;
+}
+
+.sm\:max-width-5vh {
+    max-width: 5vh;
+}
+
+/* Height */
+
+.sm\:height-5vh {
+    height: 5vh;
+}
+
+.sm\:min-height-5vh {
+    min-height: 5vh;
+}
+
+.sm\:max-height-5vh {
+    max-height: 5vh;
+} /* GENERATED 
+ * generator_rules.sm\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.sm\:css */
+
+.sm\:margin-10vh {
+    margin: 10vh;
+}
+
+.sm\:margin-left-10vh {
+    margin-left: 10vh;
+}
+
+.sm\:margin-right-10vh {
+    margin-right: 10vh;
+}
+
+.sm\:margin-top-10vh {
+    margin-top: 10vh;
+}
+
+.sm\:margin-bottom-10vh {
+    margin-bottom: 10vh;
+}
+
+/* Width */
+.sm\:width-10vh {
+    width: 10vh;
+}
+
+.sm\:min-width-10vh {
+    min-width: 10vh;
+}
+
+.sm\:max-width-10vh {
+    max-width: 10vh;
+}
+
+/* Height */
+
+.sm\:height-10vh {
+    height: 10vh;
+}
+
+.sm\:min-height-10vh {
+    min-height: 10vh;
+}
+
+.sm\:max-height-10vh {
+    max-height: 10vh;
+} /* GENERATED 
+ * generator_rules.sm\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.sm\:css */
+
+.sm\:margin-20vh {
+    margin: 20vh;
+}
+
+.sm\:margin-left-20vh {
+    margin-left: 20vh;
+}
+
+.sm\:margin-right-20vh {
+    margin-right: 20vh;
+}
+
+.sm\:margin-top-20vh {
+    margin-top: 20vh;
+}
+
+.sm\:margin-bottom-20vh {
+    margin-bottom: 20vh;
+}
+
+/* Width */
+.sm\:width-20vh {
+    width: 20vh;
+}
+
+.sm\:min-width-20vh {
+    min-width: 20vh;
+}
+
+.sm\:max-width-20vh {
+    max-width: 20vh;
+}
+
+/* Height */
+
+.sm\:height-20vh {
+    height: 20vh;
+}
+
+.sm\:min-height-20vh {
+    min-height: 20vh;
+}
+
+.sm\:max-height-20vh {
+    max-height: 20vh;
+} /* GENERATED 
+ * generator_rules.sm\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.sm\:css */
+
+.sm\:margin-25vh {
+    margin: 25vh;
+}
+
+.sm\:margin-left-25vh {
+    margin-left: 25vh;
+}
+
+.sm\:margin-right-25vh {
+    margin-right: 25vh;
+}
+
+.sm\:margin-top-25vh {
+    margin-top: 25vh;
+}
+
+.sm\:margin-bottom-25vh {
+    margin-bottom: 25vh;
+}
+
+/* Width */
+.sm\:width-25vh {
+    width: 25vh;
+}
+
+.sm\:min-width-25vh {
+    min-width: 25vh;
+}
+
+.sm\:max-width-25vh {
+    max-width: 25vh;
+}
+
+/* Height */
+
+.sm\:height-25vh {
+    height: 25vh;
+}
+
+.sm\:min-height-25vh {
+    min-height: 25vh;
+}
+
+.sm\:max-height-25vh {
+    max-height: 25vh;
+} /* GENERATED 
+ * generator_rules.sm\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.sm\:css */
+
+.sm\:margin-33vh {
+    margin: 33vh;
+}
+
+.sm\:margin-left-33vh {
+    margin-left: 33vh;
+}
+
+.sm\:margin-right-33vh {
+    margin-right: 33vh;
+}
+
+.sm\:margin-top-33vh {
+    margin-top: 33vh;
+}
+
+.sm\:margin-bottom-33vh {
+    margin-bottom: 33vh;
+}
+
+/* Width */
+.sm\:width-33vh {
+    width: 33vh;
+}
+
+.sm\:min-width-33vh {
+    min-width: 33vh;
+}
+
+.sm\:max-width-33vh {
+    max-width: 33vh;
+}
+
+/* Height */
+
+.sm\:height-33vh {
+    height: 33vh;
+}
+
+.sm\:min-height-33vh {
+    min-height: 33vh;
+}
+
+.sm\:max-height-33vh {
+    max-height: 33vh;
+} /* GENERATED 
+ * generator_rules.sm\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.sm\:css */
+
+.sm\:margin-50vh {
+    margin: 50vh;
+}
+
+.sm\:margin-left-50vh {
+    margin-left: 50vh;
+}
+
+.sm\:margin-right-50vh {
+    margin-right: 50vh;
+}
+
+.sm\:margin-top-50vh {
+    margin-top: 50vh;
+}
+
+.sm\:margin-bottom-50vh {
+    margin-bottom: 50vh;
+}
+
+/* Width */
+.sm\:width-50vh {
+    width: 50vh;
+}
+
+.sm\:min-width-50vh {
+    min-width: 50vh;
+}
+
+.sm\:max-width-50vh {
+    max-width: 50vh;
+}
+
+/* Height */
+
+.sm\:height-50vh {
+    height: 50vh;
+}
+
+.sm\:min-height-50vh {
+    min-height: 50vh;
+}
+
+.sm\:max-height-50vh {
+    max-height: 50vh;
+} /* GENERATED 
+ * generator_rules.sm\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.sm\:css */
+
+.sm\:margin-75vh {
+    margin: 75vh;
+}
+
+.sm\:margin-left-75vh {
+    margin-left: 75vh;
+}
+
+.sm\:margin-right-75vh {
+    margin-right: 75vh;
+}
+
+.sm\:margin-top-75vh {
+    margin-top: 75vh;
+}
+
+.sm\:margin-bottom-75vh {
+    margin-bottom: 75vh;
+}
+
+/* Width */
+.sm\:width-75vh {
+    width: 75vh;
+}
+
+.sm\:min-width-75vh {
+    min-width: 75vh;
+}
+
+.sm\:max-width-75vh {
+    max-width: 75vh;
+}
+
+/* Height */
+
+.sm\:height-75vh {
+    height: 75vh;
+}
+
+.sm\:min-height-75vh {
+    min-height: 75vh;
+}
+
+.sm\:max-height-75vh {
+    max-height: 75vh;
+} /* GENERATED 
+ * generator_rules.sm\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.sm\:css */
+
+.sm\:margin-5px {
+    margin: 5px;
+}
+
+.sm\:margin-left-5px {
+    margin-left: 5px;
+}
+
+.sm\:margin-right-5px {
+    margin-right: 5px;
+}
+
+.sm\:margin-top-5px {
+    margin-top: 5px;
+}
+
+.sm\:margin-bottom-5px {
+    margin-bottom: 5px;
+}
+
+/* Width */
+.sm\:width-5px {
+    width: 5px;
+}
+
+.sm\:min-width-5px {
+    min-width: 5px;
+}
+
+.sm\:max-width-5px {
+    max-width: 5px;
+}
+
+/* Height */
+
+.sm\:height-5px {
+    height: 5px;
+}
+
+.sm\:min-height-5px {
+    min-height: 5px;
+}
+
+.sm\:max-height-5px {
+    max-height: 5px;
+} /* GENERATED 
+ * generator_rules.sm\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.sm\:css */
+
+.sm\:margin-10px {
+    margin: 10px;
+}
+
+.sm\:margin-left-10px {
+    margin-left: 10px;
+}
+
+.sm\:margin-right-10px {
+    margin-right: 10px;
+}
+
+.sm\:margin-top-10px {
+    margin-top: 10px;
+}
+
+.sm\:margin-bottom-10px {
+    margin-bottom: 10px;
+}
+
+/* Width */
+.sm\:width-10px {
+    width: 10px;
+}
+
+.sm\:min-width-10px {
+    min-width: 10px;
+}
+
+.sm\:max-width-10px {
+    max-width: 10px;
+}
+
+/* Height */
+
+.sm\:height-10px {
+    height: 10px;
+}
+
+.sm\:min-height-10px {
+    min-height: 10px;
+}
+
+.sm\:max-height-10px {
+    max-height: 10px;
+} /* GENERATED 
+ * generator_rules.sm\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.sm\:css */
+
+.sm\:margin-1em {
+    margin: 1em;
+}
+
+.sm\:margin-left-1em {
+    margin-left: 1em;
+}
+
+.sm\:margin-right-1em {
+    margin-right: 1em;
+}
+
+.sm\:margin-top-1em {
+    margin-top: 1em;
+}
+
+.sm\:margin-bottom-1em {
+    margin-bottom: 1em;
+}
+
+/* Width */
+.sm\:width-1em {
+    width: 1em;
+}
+
+.sm\:min-width-1em {
+    min-width: 1em;
+}
+
+.sm\:max-width-1em {
+    max-width: 1em;
+}
+
+/* Height */
+
+.sm\:height-1em {
+    height: 1em;
+}
+
+.sm\:min-height-1em {
+    min-height: 1em;
+}
+
+.sm\:max-height-1em {
+    max-height: 1em;
+} /* GENERATED 
+ * generator_rules.sm\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.sm\:css */
+
+.sm\:margin-2em {
+    margin: 2em;
+}
+
+.sm\:margin-left-2em {
+    margin-left: 2em;
+}
+
+.sm\:margin-right-2em {
+    margin-right: 2em;
+}
+
+.sm\:margin-top-2em {
+    margin-top: 2em;
+}
+
+.sm\:margin-bottom-2em {
+    margin-bottom: 2em;
+}
+
+/* Width */
+.sm\:width-2em {
+    width: 2em;
+}
+
+.sm\:min-width-2em {
+    min-width: 2em;
+}
+
+.sm\:max-width-2em {
+    max-width: 2em;
+}
+
+/* Height */
+
+.sm\:height-2em {
+    height: 2em;
+}
+
+.sm\:min-height-2em {
+    min-height: 2em;
+}
+
+.sm\:max-height-2em {
+    max-height: 2em;
+} /* GENERATED 
+ * generator_rules.sm\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.sm\:css */
+
+.sm\:margin-20pct {
+    margin: 20%;
+}
+
+.sm\:margin-left-20pct {
+    margin-left: 20%;
+}
+
+.sm\:margin-right-20pct {
+    margin-right: 20%;
+}
+
+.sm\:margin-top-20pct {
+    margin-top: 20%;
+}
+
+.sm\:margin-bottom-20pct {
+    margin-bottom: 20%;
+}
+
+/* Width */
+.sm\:width-20pct {
+    width: 20%;
+}
+
+.sm\:min-width-20pct {
+    min-width: 20%;
+}
+
+.sm\:max-width-20pct {
+    max-width: 20%;
+}
+
+/* Height */
+
+.sm\:height-20pct {
+    height: 20%;
+}
+
+.sm\:min-height-20pct {
+    min-height: 20%;
+}
+
+.sm\:max-height-20pct {
+    max-height: 20%;
+} /* GENERATED 
+ * generator_rules.sm\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.sm\:css */
+
+.sm\:margin-25pct {
+    margin: 25%;
+}
+
+.sm\:margin-left-25pct {
+    margin-left: 25%;
+}
+
+.sm\:margin-right-25pct {
+    margin-right: 25%;
+}
+
+.sm\:margin-top-25pct {
+    margin-top: 25%;
+}
+
+.sm\:margin-bottom-25pct {
+    margin-bottom: 25%;
+}
+
+/* Width */
+.sm\:width-25pct {
+    width: 25%;
+}
+
+.sm\:min-width-25pct {
+    min-width: 25%;
+}
+
+.sm\:max-width-25pct {
+    max-width: 25%;
+}
+
+/* Height */
+
+.sm\:height-25pct {
+    height: 25%;
+}
+
+.sm\:min-height-25pct {
+    min-height: 25%;
+}
+
+.sm\:max-height-25pct {
+    max-height: 25%;
+} /* GENERATED 
+ * generator_rules.sm\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.sm\:css */
+
+.sm\:margin-30pct {
+    margin: 30%;
+}
+
+.sm\:margin-left-30pct {
+    margin-left: 30%;
+}
+
+.sm\:margin-right-30pct {
+    margin-right: 30%;
+}
+
+.sm\:margin-top-30pct {
+    margin-top: 30%;
+}
+
+.sm\:margin-bottom-30pct {
+    margin-bottom: 30%;
+}
+
+/* Width */
+.sm\:width-30pct {
+    width: 30%;
+}
+
+.sm\:min-width-30pct {
+    min-width: 30%;
+}
+
+.sm\:max-width-30pct {
+    max-width: 30%;
+}
+
+/* Height */
+
+.sm\:height-30pct {
+    height: 30%;
+}
+
+.sm\:min-height-30pct {
+    min-height: 30%;
+}
+
+.sm\:max-height-30pct {
+    max-height: 30%;
+} /* GENERATED 
+ * generator_rules.sm\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.sm\:css */
+
+.sm\:margin-40pct {
+    margin: 40%;
+}
+
+.sm\:margin-left-40pct {
+    margin-left: 40%;
+}
+
+.sm\:margin-right-40pct {
+    margin-right: 40%;
+}
+
+.sm\:margin-top-40pct {
+    margin-top: 40%;
+}
+
+.sm\:margin-bottom-40pct {
+    margin-bottom: 40%;
+}
+
+/* Width */
+.sm\:width-40pct {
+    width: 40%;
+}
+
+.sm\:min-width-40pct {
+    min-width: 40%;
+}
+
+.sm\:max-width-40pct {
+    max-width: 40%;
+}
+
+/* Height */
+
+.sm\:height-40pct {
+    height: 40%;
+}
+
+.sm\:min-height-40pct {
+    min-height: 40%;
+}
+
+.sm\:max-height-40pct {
+    max-height: 40%;
+} /* GENERATED 
+ * generator_rules.sm\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.sm\:css */
+
+.sm\:margin-50pct {
+    margin: 50%;
+}
+
+.sm\:margin-left-50pct {
+    margin-left: 50%;
+}
+
+.sm\:margin-right-50pct {
+    margin-right: 50%;
+}
+
+.sm\:margin-top-50pct {
+    margin-top: 50%;
+}
+
+.sm\:margin-bottom-50pct {
+    margin-bottom: 50%;
+}
+
+/* Width */
+.sm\:width-50pct {
+    width: 50%;
+}
+
+.sm\:min-width-50pct {
+    min-width: 50%;
+}
+
+.sm\:max-width-50pct {
+    max-width: 50%;
+}
+
+/* Height */
+
+.sm\:height-50pct {
+    height: 50%;
+}
+
+.sm\:min-height-50pct {
+    min-height: 50%;
+}
+
+.sm\:max-height-50pct {
+    max-height: 50%;
+} /* GENERATED 
+ * generator_rules.sm\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.sm\:css */
+
+.sm\:margin-auto {
+    margin: auto;
+}
+
+.sm\:margin-left-auto {
+    margin-left: auto;
+}
+
+.sm\:margin-right-auto {
+    margin-right: auto;
+}
+
+.sm\:margin-top-auto {
+    margin-top: auto;
+}
+
+.sm\:margin-bottom-auto {
+    margin-bottom: auto;
+}
+
+/* Width */
+.sm\:width-auto {
+    width: auto;
+}
+
+.sm\:min-width-auto {
+    min-width: auto;
+}
+
+.sm\:max-width-auto {
+    max-width: auto;
+}
+
+/* Height */
+
+.sm\:height-auto {
+    height: auto;
+}
+
+.sm\:min-height-auto {
+    min-height: auto;
+}
+
+.sm\:max-height-auto {
+    max-height: auto;
+}
+}
+@media only screen and (min-width:601px) { 
+/*
+ * fixed_rules.md\:css
+ * Contains all of the fixed rules
+ */
+/* Generic colouring rules */
+
+.md\:fg-primary {
+    color: var(--v-colour-primary);
+}
+
+.md\:fg-secondary {
+    color: var(--v-colour-secondary);
+}
+
+.md\:fg-tertiary {
+    color: var(--v-colour-tertiary);
+}
+
+.md\:bg-primary {
+    background-color: var(--v-colour-primary);
+}
+
+.md\:bg-secondary {
+    background-color: var(--v-colour-secondary);
+}
+
+.md\:bg-tertiary {
+    background-color: var(--v-colour-tertiary);
+}
+
+/* Margins */
+.md\:margin-auto {
+    margin: auto;
+}
+
+.md\:margin-left-auto {
+    margin-left: auto;
+}
+
+.md\:margin-right-auto {
+    margin-right: auto;
+}
+
+.md\:margin-top-auto {
+    margin-top: auto;
+}
+
+.md\:margin-bottom-auto {
+    margin-top: auto;
+}
+
+.md\:margin-none {
+    margin: 0px;
+}
+
+.md\:margin-left-none {
+    margin-left: 0px;
+}
+
+.md\:margin-right-none {
+    margin-right: 0px;
+}
+
+.md\:margin-top-none {
+    margin-top: 0px;
+}
+
+.md\:margin-bottom-none {
+    margin-bottom: 0px;
+}
+
+/* Custom UI Element classes */
+
+.md\:link {
+    color: var(--v-colour-tertiary);
+}
+
+
+.md\:button-wrapper {
+    margin: 5px;
+}
+
+.md\:button {
+    /* border: solid white 2px; */
+    border-radius: 1em;
+    border: solid var(--v-colour-tertiary) 2px;
+    line-height: 2;
+    cursor: grab;
+    margin: 1rem;
+}
+
+.md\:button:hover {
+    background-color: rgba(225, 216, 216, 0.md\:312);
+}
+
+.md\:button-text {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+img.md\:image-round {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+img.md\:profile-img-small {
+    width: 50px;
+    height: 50px;
+}
+
+img.md\:profile-img-medium {
+    width: 100px;
+    height: 100px;
+}
+
+img.md\:profile-img-large {
+    width: 150px;
+    height: 150px;
+}
+
+/* Borders */
+.md\:border-primary-2px {
+    border: solid var(--v-colour-primary) 2px;
+}
+
+.md\:border-secondary-2px {
+    border: solid var(--v-colour-secondary) 2px;
+}
+
+.md\:border-tertiary-2px {
+    border: solid var(--v-colour-tertiary) 2px;
+}
+
+.md\:border-white-2px {
+    border: solid white 2px;
+}
+
+/* Layouts */
+
+.md\:inline-block {
+    display: inline-block;
+}
+
+.md\:inline-flex {
+    display: inline-flex;
+}
+
+.md\:container-flex {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+
+}
+
+.md\:flex-justify-center {
+    justify-content: center;
+}
+
+.md\:flex-justifty-left {
+    justify-content: left;
+}
+
+.md\:flex-justify-right {
+    justify-content: right;
+}
+
+.md\:flex-align-center {
+    align-items: center;
+}
+
+.md\:flex-align-start {
+    align-items: flex-start;
+}
+
+.md\:align-center {
+    text-align: center;
+}
+
+.md\:align-left {
+    text-align: left;
+}
+
+.md\:align-right {
+    text-align: right;
+} /* GENERATED 
+ * generator_rules.md\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.md\:css */
+
+.md\:margin-5vw {
+    margin: 5vw;
+}
+
+.md\:margin-left-5vw {
+    margin-left: 5vw;
+}
+
+.md\:margin-right-5vw {
+    margin-right: 5vw;
+}
+
+.md\:margin-top-5vw {
+    margin-top: 5vw;
+}
+
+.md\:margin-bottom-5vw {
+    margin-bottom: 5vw;
+}
+
+/* Width */
+.md\:width-5vw {
+    width: 5vw;
+}
+
+.md\:min-width-5vw {
+    min-width: 5vw;
+}
+
+.md\:max-width-5vw {
+    max-width: 5vw;
+}
+
+/* Height */
+
+.md\:height-5vw {
+    height: 5vw;
+}
+
+.md\:min-height-5vw {
+    min-height: 5vw;
+}
+
+.md\:max-height-5vw {
+    max-height: 5vw;
+} /* GENERATED 
+ * generator_rules.md\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.md\:css */
+
+.md\:margin-10vw {
+    margin: 10vw;
+}
+
+.md\:margin-left-10vw {
+    margin-left: 10vw;
+}
+
+.md\:margin-right-10vw {
+    margin-right: 10vw;
+}
+
+.md\:margin-top-10vw {
+    margin-top: 10vw;
+}
+
+.md\:margin-bottom-10vw {
+    margin-bottom: 10vw;
+}
+
+/* Width */
+.md\:width-10vw {
+    width: 10vw;
+}
+
+.md\:min-width-10vw {
+    min-width: 10vw;
+}
+
+.md\:max-width-10vw {
+    max-width: 10vw;
+}
+
+/* Height */
+
+.md\:height-10vw {
+    height: 10vw;
+}
+
+.md\:min-height-10vw {
+    min-height: 10vw;
+}
+
+.md\:max-height-10vw {
+    max-height: 10vw;
+} /* GENERATED 
+ * generator_rules.md\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.md\:css */
+
+.md\:margin-20vw {
+    margin: 20vw;
+}
+
+.md\:margin-left-20vw {
+    margin-left: 20vw;
+}
+
+.md\:margin-right-20vw {
+    margin-right: 20vw;
+}
+
+.md\:margin-top-20vw {
+    margin-top: 20vw;
+}
+
+.md\:margin-bottom-20vw {
+    margin-bottom: 20vw;
+}
+
+/* Width */
+.md\:width-20vw {
+    width: 20vw;
+}
+
+.md\:min-width-20vw {
+    min-width: 20vw;
+}
+
+.md\:max-width-20vw {
+    max-width: 20vw;
+}
+
+/* Height */
+
+.md\:height-20vw {
+    height: 20vw;
+}
+
+.md\:min-height-20vw {
+    min-height: 20vw;
+}
+
+.md\:max-height-20vw {
+    max-height: 20vw;
+} /* GENERATED 
+ * generator_rules.md\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.md\:css */
+
+.md\:margin-25vw {
+    margin: 25vw;
+}
+
+.md\:margin-left-25vw {
+    margin-left: 25vw;
+}
+
+.md\:margin-right-25vw {
+    margin-right: 25vw;
+}
+
+.md\:margin-top-25vw {
+    margin-top: 25vw;
+}
+
+.md\:margin-bottom-25vw {
+    margin-bottom: 25vw;
+}
+
+/* Width */
+.md\:width-25vw {
+    width: 25vw;
+}
+
+.md\:min-width-25vw {
+    min-width: 25vw;
+}
+
+.md\:max-width-25vw {
+    max-width: 25vw;
+}
+
+/* Height */
+
+.md\:height-25vw {
+    height: 25vw;
+}
+
+.md\:min-height-25vw {
+    min-height: 25vw;
+}
+
+.md\:max-height-25vw {
+    max-height: 25vw;
+} /* GENERATED 
+ * generator_rules.md\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.md\:css */
+
+.md\:margin-33vw {
+    margin: 33vw;
+}
+
+.md\:margin-left-33vw {
+    margin-left: 33vw;
+}
+
+.md\:margin-right-33vw {
+    margin-right: 33vw;
+}
+
+.md\:margin-top-33vw {
+    margin-top: 33vw;
+}
+
+.md\:margin-bottom-33vw {
+    margin-bottom: 33vw;
+}
+
+/* Width */
+.md\:width-33vw {
+    width: 33vw;
+}
+
+.md\:min-width-33vw {
+    min-width: 33vw;
+}
+
+.md\:max-width-33vw {
+    max-width: 33vw;
+}
+
+/* Height */
+
+.md\:height-33vw {
+    height: 33vw;
+}
+
+.md\:min-height-33vw {
+    min-height: 33vw;
+}
+
+.md\:max-height-33vw {
+    max-height: 33vw;
+} /* GENERATED 
+ * generator_rules.md\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.md\:css */
+
+.md\:margin-50vw {
+    margin: 50vw;
+}
+
+.md\:margin-left-50vw {
+    margin-left: 50vw;
+}
+
+.md\:margin-right-50vw {
+    margin-right: 50vw;
+}
+
+.md\:margin-top-50vw {
+    margin-top: 50vw;
+}
+
+.md\:margin-bottom-50vw {
+    margin-bottom: 50vw;
+}
+
+/* Width */
+.md\:width-50vw {
+    width: 50vw;
+}
+
+.md\:min-width-50vw {
+    min-width: 50vw;
+}
+
+.md\:max-width-50vw {
+    max-width: 50vw;
+}
+
+/* Height */
+
+.md\:height-50vw {
+    height: 50vw;
+}
+
+.md\:min-height-50vw {
+    min-height: 50vw;
+}
+
+.md\:max-height-50vw {
+    max-height: 50vw;
+} /* GENERATED 
+ * generator_rules.md\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.md\:css */
+
+.md\:margin-75vw {
+    margin: 75vw;
+}
+
+.md\:margin-left-75vw {
+    margin-left: 75vw;
+}
+
+.md\:margin-right-75vw {
+    margin-right: 75vw;
+}
+
+.md\:margin-top-75vw {
+    margin-top: 75vw;
+}
+
+.md\:margin-bottom-75vw {
+    margin-bottom: 75vw;
+}
+
+/* Width */
+.md\:width-75vw {
+    width: 75vw;
+}
+
+.md\:min-width-75vw {
+    min-width: 75vw;
+}
+
+.md\:max-width-75vw {
+    max-width: 75vw;
+}
+
+/* Height */
+
+.md\:height-75vw {
+    height: 75vw;
+}
+
+.md\:min-height-75vw {
+    min-height: 75vw;
+}
+
+.md\:max-height-75vw {
+    max-height: 75vw;
+} /* GENERATED 
+ * generator_rules.md\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.md\:css */
+
+.md\:margin-5vh {
+    margin: 5vh;
+}
+
+.md\:margin-left-5vh {
+    margin-left: 5vh;
+}
+
+.md\:margin-right-5vh {
+    margin-right: 5vh;
+}
+
+.md\:margin-top-5vh {
+    margin-top: 5vh;
+}
+
+.md\:margin-bottom-5vh {
+    margin-bottom: 5vh;
+}
+
+/* Width */
+.md\:width-5vh {
+    width: 5vh;
+}
+
+.md\:min-width-5vh {
+    min-width: 5vh;
+}
+
+.md\:max-width-5vh {
+    max-width: 5vh;
+}
+
+/* Height */
+
+.md\:height-5vh {
+    height: 5vh;
+}
+
+.md\:min-height-5vh {
+    min-height: 5vh;
+}
+
+.md\:max-height-5vh {
+    max-height: 5vh;
+} /* GENERATED 
+ * generator_rules.md\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.md\:css */
+
+.md\:margin-10vh {
+    margin: 10vh;
+}
+
+.md\:margin-left-10vh {
+    margin-left: 10vh;
+}
+
+.md\:margin-right-10vh {
+    margin-right: 10vh;
+}
+
+.md\:margin-top-10vh {
+    margin-top: 10vh;
+}
+
+.md\:margin-bottom-10vh {
+    margin-bottom: 10vh;
+}
+
+/* Width */
+.md\:width-10vh {
+    width: 10vh;
+}
+
+.md\:min-width-10vh {
+    min-width: 10vh;
+}
+
+.md\:max-width-10vh {
+    max-width: 10vh;
+}
+
+/* Height */
+
+.md\:height-10vh {
+    height: 10vh;
+}
+
+.md\:min-height-10vh {
+    min-height: 10vh;
+}
+
+.md\:max-height-10vh {
+    max-height: 10vh;
+} /* GENERATED 
+ * generator_rules.md\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.md\:css */
+
+.md\:margin-20vh {
+    margin: 20vh;
+}
+
+.md\:margin-left-20vh {
+    margin-left: 20vh;
+}
+
+.md\:margin-right-20vh {
+    margin-right: 20vh;
+}
+
+.md\:margin-top-20vh {
+    margin-top: 20vh;
+}
+
+.md\:margin-bottom-20vh {
+    margin-bottom: 20vh;
+}
+
+/* Width */
+.md\:width-20vh {
+    width: 20vh;
+}
+
+.md\:min-width-20vh {
+    min-width: 20vh;
+}
+
+.md\:max-width-20vh {
+    max-width: 20vh;
+}
+
+/* Height */
+
+.md\:height-20vh {
+    height: 20vh;
+}
+
+.md\:min-height-20vh {
+    min-height: 20vh;
+}
+
+.md\:max-height-20vh {
+    max-height: 20vh;
+} /* GENERATED 
+ * generator_rules.md\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.md\:css */
+
+.md\:margin-25vh {
+    margin: 25vh;
+}
+
+.md\:margin-left-25vh {
+    margin-left: 25vh;
+}
+
+.md\:margin-right-25vh {
+    margin-right: 25vh;
+}
+
+.md\:margin-top-25vh {
+    margin-top: 25vh;
+}
+
+.md\:margin-bottom-25vh {
+    margin-bottom: 25vh;
+}
+
+/* Width */
+.md\:width-25vh {
+    width: 25vh;
+}
+
+.md\:min-width-25vh {
+    min-width: 25vh;
+}
+
+.md\:max-width-25vh {
+    max-width: 25vh;
+}
+
+/* Height */
+
+.md\:height-25vh {
+    height: 25vh;
+}
+
+.md\:min-height-25vh {
+    min-height: 25vh;
+}
+
+.md\:max-height-25vh {
+    max-height: 25vh;
+} /* GENERATED 
+ * generator_rules.md\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.md\:css */
+
+.md\:margin-33vh {
+    margin: 33vh;
+}
+
+.md\:margin-left-33vh {
+    margin-left: 33vh;
+}
+
+.md\:margin-right-33vh {
+    margin-right: 33vh;
+}
+
+.md\:margin-top-33vh {
+    margin-top: 33vh;
+}
+
+.md\:margin-bottom-33vh {
+    margin-bottom: 33vh;
+}
+
+/* Width */
+.md\:width-33vh {
+    width: 33vh;
+}
+
+.md\:min-width-33vh {
+    min-width: 33vh;
+}
+
+.md\:max-width-33vh {
+    max-width: 33vh;
+}
+
+/* Height */
+
+.md\:height-33vh {
+    height: 33vh;
+}
+
+.md\:min-height-33vh {
+    min-height: 33vh;
+}
+
+.md\:max-height-33vh {
+    max-height: 33vh;
+} /* GENERATED 
+ * generator_rules.md\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.md\:css */
+
+.md\:margin-50vh {
+    margin: 50vh;
+}
+
+.md\:margin-left-50vh {
+    margin-left: 50vh;
+}
+
+.md\:margin-right-50vh {
+    margin-right: 50vh;
+}
+
+.md\:margin-top-50vh {
+    margin-top: 50vh;
+}
+
+.md\:margin-bottom-50vh {
+    margin-bottom: 50vh;
+}
+
+/* Width */
+.md\:width-50vh {
+    width: 50vh;
+}
+
+.md\:min-width-50vh {
+    min-width: 50vh;
+}
+
+.md\:max-width-50vh {
+    max-width: 50vh;
+}
+
+/* Height */
+
+.md\:height-50vh {
+    height: 50vh;
+}
+
+.md\:min-height-50vh {
+    min-height: 50vh;
+}
+
+.md\:max-height-50vh {
+    max-height: 50vh;
+} /* GENERATED 
+ * generator_rules.md\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.md\:css */
+
+.md\:margin-75vh {
+    margin: 75vh;
+}
+
+.md\:margin-left-75vh {
+    margin-left: 75vh;
+}
+
+.md\:margin-right-75vh {
+    margin-right: 75vh;
+}
+
+.md\:margin-top-75vh {
+    margin-top: 75vh;
+}
+
+.md\:margin-bottom-75vh {
+    margin-bottom: 75vh;
+}
+
+/* Width */
+.md\:width-75vh {
+    width: 75vh;
+}
+
+.md\:min-width-75vh {
+    min-width: 75vh;
+}
+
+.md\:max-width-75vh {
+    max-width: 75vh;
+}
+
+/* Height */
+
+.md\:height-75vh {
+    height: 75vh;
+}
+
+.md\:min-height-75vh {
+    min-height: 75vh;
+}
+
+.md\:max-height-75vh {
+    max-height: 75vh;
+} /* GENERATED 
+ * generator_rules.md\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.md\:css */
+
+.md\:margin-5px {
+    margin: 5px;
+}
+
+.md\:margin-left-5px {
+    margin-left: 5px;
+}
+
+.md\:margin-right-5px {
+    margin-right: 5px;
+}
+
+.md\:margin-top-5px {
+    margin-top: 5px;
+}
+
+.md\:margin-bottom-5px {
+    margin-bottom: 5px;
+}
+
+/* Width */
+.md\:width-5px {
+    width: 5px;
+}
+
+.md\:min-width-5px {
+    min-width: 5px;
+}
+
+.md\:max-width-5px {
+    max-width: 5px;
+}
+
+/* Height */
+
+.md\:height-5px {
+    height: 5px;
+}
+
+.md\:min-height-5px {
+    min-height: 5px;
+}
+
+.md\:max-height-5px {
+    max-height: 5px;
+} /* GENERATED 
+ * generator_rules.md\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.md\:css */
+
+.md\:margin-10px {
+    margin: 10px;
+}
+
+.md\:margin-left-10px {
+    margin-left: 10px;
+}
+
+.md\:margin-right-10px {
+    margin-right: 10px;
+}
+
+.md\:margin-top-10px {
+    margin-top: 10px;
+}
+
+.md\:margin-bottom-10px {
+    margin-bottom: 10px;
+}
+
+/* Width */
+.md\:width-10px {
+    width: 10px;
+}
+
+.md\:min-width-10px {
+    min-width: 10px;
+}
+
+.md\:max-width-10px {
+    max-width: 10px;
+}
+
+/* Height */
+
+.md\:height-10px {
+    height: 10px;
+}
+
+.md\:min-height-10px {
+    min-height: 10px;
+}
+
+.md\:max-height-10px {
+    max-height: 10px;
+} /* GENERATED 
+ * generator_rules.md\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.md\:css */
+
+.md\:margin-1em {
+    margin: 1em;
+}
+
+.md\:margin-left-1em {
+    margin-left: 1em;
+}
+
+.md\:margin-right-1em {
+    margin-right: 1em;
+}
+
+.md\:margin-top-1em {
+    margin-top: 1em;
+}
+
+.md\:margin-bottom-1em {
+    margin-bottom: 1em;
+}
+
+/* Width */
+.md\:width-1em {
+    width: 1em;
+}
+
+.md\:min-width-1em {
+    min-width: 1em;
+}
+
+.md\:max-width-1em {
+    max-width: 1em;
+}
+
+/* Height */
+
+.md\:height-1em {
+    height: 1em;
+}
+
+.md\:min-height-1em {
+    min-height: 1em;
+}
+
+.md\:max-height-1em {
+    max-height: 1em;
+} /* GENERATED 
+ * generator_rules.md\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.md\:css */
+
+.md\:margin-2em {
+    margin: 2em;
+}
+
+.md\:margin-left-2em {
+    margin-left: 2em;
+}
+
+.md\:margin-right-2em {
+    margin-right: 2em;
+}
+
+.md\:margin-top-2em {
+    margin-top: 2em;
+}
+
+.md\:margin-bottom-2em {
+    margin-bottom: 2em;
+}
+
+/* Width */
+.md\:width-2em {
+    width: 2em;
+}
+
+.md\:min-width-2em {
+    min-width: 2em;
+}
+
+.md\:max-width-2em {
+    max-width: 2em;
+}
+
+/* Height */
+
+.md\:height-2em {
+    height: 2em;
+}
+
+.md\:min-height-2em {
+    min-height: 2em;
+}
+
+.md\:max-height-2em {
+    max-height: 2em;
+} /* GENERATED 
+ * generator_rules.md\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.md\:css */
+
+.md\:margin-20pct {
+    margin: 20%;
+}
+
+.md\:margin-left-20pct {
+    margin-left: 20%;
+}
+
+.md\:margin-right-20pct {
+    margin-right: 20%;
+}
+
+.md\:margin-top-20pct {
+    margin-top: 20%;
+}
+
+.md\:margin-bottom-20pct {
+    margin-bottom: 20%;
+}
+
+/* Width */
+.md\:width-20pct {
+    width: 20%;
+}
+
+.md\:min-width-20pct {
+    min-width: 20%;
+}
+
+.md\:max-width-20pct {
+    max-width: 20%;
+}
+
+/* Height */
+
+.md\:height-20pct {
+    height: 20%;
+}
+
+.md\:min-height-20pct {
+    min-height: 20%;
+}
+
+.md\:max-height-20pct {
+    max-height: 20%;
+} /* GENERATED 
+ * generator_rules.md\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.md\:css */
+
+.md\:margin-25pct {
+    margin: 25%;
+}
+
+.md\:margin-left-25pct {
+    margin-left: 25%;
+}
+
+.md\:margin-right-25pct {
+    margin-right: 25%;
+}
+
+.md\:margin-top-25pct {
+    margin-top: 25%;
+}
+
+.md\:margin-bottom-25pct {
+    margin-bottom: 25%;
+}
+
+/* Width */
+.md\:width-25pct {
+    width: 25%;
+}
+
+.md\:min-width-25pct {
+    min-width: 25%;
+}
+
+.md\:max-width-25pct {
+    max-width: 25%;
+}
+
+/* Height */
+
+.md\:height-25pct {
+    height: 25%;
+}
+
+.md\:min-height-25pct {
+    min-height: 25%;
+}
+
+.md\:max-height-25pct {
+    max-height: 25%;
+} /* GENERATED 
+ * generator_rules.md\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.md\:css */
+
+.md\:margin-30pct {
+    margin: 30%;
+}
+
+.md\:margin-left-30pct {
+    margin-left: 30%;
+}
+
+.md\:margin-right-30pct {
+    margin-right: 30%;
+}
+
+.md\:margin-top-30pct {
+    margin-top: 30%;
+}
+
+.md\:margin-bottom-30pct {
+    margin-bottom: 30%;
+}
+
+/* Width */
+.md\:width-30pct {
+    width: 30%;
+}
+
+.md\:min-width-30pct {
+    min-width: 30%;
+}
+
+.md\:max-width-30pct {
+    max-width: 30%;
+}
+
+/* Height */
+
+.md\:height-30pct {
+    height: 30%;
+}
+
+.md\:min-height-30pct {
+    min-height: 30%;
+}
+
+.md\:max-height-30pct {
+    max-height: 30%;
+} /* GENERATED 
+ * generator_rules.md\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.md\:css */
+
+.md\:margin-40pct {
+    margin: 40%;
+}
+
+.md\:margin-left-40pct {
+    margin-left: 40%;
+}
+
+.md\:margin-right-40pct {
+    margin-right: 40%;
+}
+
+.md\:margin-top-40pct {
+    margin-top: 40%;
+}
+
+.md\:margin-bottom-40pct {
+    margin-bottom: 40%;
+}
+
+/* Width */
+.md\:width-40pct {
+    width: 40%;
+}
+
+.md\:min-width-40pct {
+    min-width: 40%;
+}
+
+.md\:max-width-40pct {
+    max-width: 40%;
+}
+
+/* Height */
+
+.md\:height-40pct {
+    height: 40%;
+}
+
+.md\:min-height-40pct {
+    min-height: 40%;
+}
+
+.md\:max-height-40pct {
+    max-height: 40%;
+} /* GENERATED 
+ * generator_rules.md\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.md\:css */
+
+.md\:margin-50pct {
+    margin: 50%;
+}
+
+.md\:margin-left-50pct {
+    margin-left: 50%;
+}
+
+.md\:margin-right-50pct {
+    margin-right: 50%;
+}
+
+.md\:margin-top-50pct {
+    margin-top: 50%;
+}
+
+.md\:margin-bottom-50pct {
+    margin-bottom: 50%;
+}
+
+/* Width */
+.md\:width-50pct {
+    width: 50%;
+}
+
+.md\:min-width-50pct {
+    min-width: 50%;
+}
+
+.md\:max-width-50pct {
+    max-width: 50%;
+}
+
+/* Height */
+
+.md\:height-50pct {
+    height: 50%;
+}
+
+.md\:min-height-50pct {
+    min-height: 50%;
+}
+
+.md\:max-height-50pct {
+    max-height: 50%;
+} /* GENERATED 
+ * generator_rules.md\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.md\:css */
+
+.md\:margin-auto {
+    margin: auto;
+}
+
+.md\:margin-left-auto {
+    margin-left: auto;
+}
+
+.md\:margin-right-auto {
+    margin-right: auto;
+}
+
+.md\:margin-top-auto {
+    margin-top: auto;
+}
+
+.md\:margin-bottom-auto {
+    margin-bottom: auto;
+}
+
+/* Width */
+.md\:width-auto {
+    width: auto;
+}
+
+.md\:min-width-auto {
+    min-width: auto;
+}
+
+.md\:max-width-auto {
+    max-width: auto;
+}
+
+/* Height */
+
+.md\:height-auto {
+    height: auto;
+}
+
+.md\:min-height-auto {
+    min-height: auto;
+}
+
+.md\:max-height-auto {
+    max-height: auto;
+}
+}
+@media only screen and (min-width:1367px) { 
+/*
+ * fixed_rules.lg\:css
+ * Contains all of the fixed rules
+ */
+/* Generic colouring rules */
+
+.lg\:fg-primary {
+    color: var(--v-colour-primary);
+}
+
+.lg\:fg-secondary {
+    color: var(--v-colour-secondary);
+}
+
+.lg\:fg-tertiary {
+    color: var(--v-colour-tertiary);
+}
+
+.lg\:bg-primary {
+    background-color: var(--v-colour-primary);
+}
+
+.lg\:bg-secondary {
+    background-color: var(--v-colour-secondary);
+}
+
+.lg\:bg-tertiary {
+    background-color: var(--v-colour-tertiary);
+}
+
+/* Margins */
+.lg\:margin-auto {
+    margin: auto;
+}
+
+.lg\:margin-left-auto {
+    margin-left: auto;
+}
+
+.lg\:margin-right-auto {
+    margin-right: auto;
+}
+
+.lg\:margin-top-auto {
+    margin-top: auto;
+}
+
+.lg\:margin-bottom-auto {
+    margin-top: auto;
+}
+
+.lg\:margin-none {
+    margin: 0px;
+}
+
+.lg\:margin-left-none {
+    margin-left: 0px;
+}
+
+.lg\:margin-right-none {
+    margin-right: 0px;
+}
+
+.lg\:margin-top-none {
+    margin-top: 0px;
+}
+
+.lg\:margin-bottom-none {
+    margin-bottom: 0px;
+}
+
+/* Custom UI Element classes */
+
+.lg\:link {
+    color: var(--v-colour-tertiary);
+}
+
+
+.lg\:button-wrapper {
+    margin: 5px;
+}
+
+.lg\:button {
+    /* border: solid white 2px; */
+    border-radius: 1em;
+    border: solid var(--v-colour-tertiary) 2px;
+    line-height: 2;
+    cursor: grab;
+    margin: 1rem;
+}
+
+.lg\:button:hover {
+    background-color: rgba(225, 216, 216, 0.lg\:312);
+}
+
+.lg\:button-text {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+img.lg\:image-round {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+img.lg\:profile-img-small {
+    width: 50px;
+    height: 50px;
+}
+
+img.lg\:profile-img-medium {
+    width: 100px;
+    height: 100px;
+}
+
+img.lg\:profile-img-large {
+    width: 150px;
+    height: 150px;
+}
+
+/* Borders */
+.lg\:border-primary-2px {
+    border: solid var(--v-colour-primary) 2px;
+}
+
+.lg\:border-secondary-2px {
+    border: solid var(--v-colour-secondary) 2px;
+}
+
+.lg\:border-tertiary-2px {
+    border: solid var(--v-colour-tertiary) 2px;
+}
+
+.lg\:border-white-2px {
+    border: solid white 2px;
+}
+
+/* Layouts */
+
+.lg\:inline-block {
+    display: inline-block;
+}
+
+.lg\:inline-flex {
+    display: inline-flex;
+}
+
+.lg\:container-flex {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+
+}
+
+.lg\:flex-justify-center {
+    justify-content: center;
+}
+
+.lg\:flex-justifty-left {
+    justify-content: left;
+}
+
+.lg\:flex-justify-right {
+    justify-content: right;
+}
+
+.lg\:flex-align-center {
+    align-items: center;
+}
+
+.lg\:flex-align-start {
+    align-items: flex-start;
+}
+
+.lg\:align-center {
+    text-align: center;
+}
+
+.lg\:align-left {
+    text-align: left;
+}
+
+.lg\:align-right {
+    text-align: right;
+} /* GENERATED 
+ * generator_rules.lg\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.lg\:css */
+
+.lg\:margin-5vw {
+    margin: 5vw;
+}
+
+.lg\:margin-left-5vw {
+    margin-left: 5vw;
+}
+
+.lg\:margin-right-5vw {
+    margin-right: 5vw;
+}
+
+.lg\:margin-top-5vw {
+    margin-top: 5vw;
+}
+
+.lg\:margin-bottom-5vw {
+    margin-bottom: 5vw;
+}
+
+/* Width */
+.lg\:width-5vw {
+    width: 5vw;
+}
+
+.lg\:min-width-5vw {
+    min-width: 5vw;
+}
+
+.lg\:max-width-5vw {
+    max-width: 5vw;
+}
+
+/* Height */
+
+.lg\:height-5vw {
+    height: 5vw;
+}
+
+.lg\:min-height-5vw {
+    min-height: 5vw;
+}
+
+.lg\:max-height-5vw {
+    max-height: 5vw;
+} /* GENERATED 
+ * generator_rules.lg\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.lg\:css */
+
+.lg\:margin-10vw {
+    margin: 10vw;
+}
+
+.lg\:margin-left-10vw {
+    margin-left: 10vw;
+}
+
+.lg\:margin-right-10vw {
+    margin-right: 10vw;
+}
+
+.lg\:margin-top-10vw {
+    margin-top: 10vw;
+}
+
+.lg\:margin-bottom-10vw {
+    margin-bottom: 10vw;
+}
+
+/* Width */
+.lg\:width-10vw {
+    width: 10vw;
+}
+
+.lg\:min-width-10vw {
+    min-width: 10vw;
+}
+
+.lg\:max-width-10vw {
+    max-width: 10vw;
+}
+
+/* Height */
+
+.lg\:height-10vw {
+    height: 10vw;
+}
+
+.lg\:min-height-10vw {
+    min-height: 10vw;
+}
+
+.lg\:max-height-10vw {
+    max-height: 10vw;
+} /* GENERATED 
+ * generator_rules.lg\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.lg\:css */
+
+.lg\:margin-20vw {
+    margin: 20vw;
+}
+
+.lg\:margin-left-20vw {
+    margin-left: 20vw;
+}
+
+.lg\:margin-right-20vw {
+    margin-right: 20vw;
+}
+
+.lg\:margin-top-20vw {
+    margin-top: 20vw;
+}
+
+.lg\:margin-bottom-20vw {
+    margin-bottom: 20vw;
+}
+
+/* Width */
+.lg\:width-20vw {
+    width: 20vw;
+}
+
+.lg\:min-width-20vw {
+    min-width: 20vw;
+}
+
+.lg\:max-width-20vw {
+    max-width: 20vw;
+}
+
+/* Height */
+
+.lg\:height-20vw {
+    height: 20vw;
+}
+
+.lg\:min-height-20vw {
+    min-height: 20vw;
+}
+
+.lg\:max-height-20vw {
+    max-height: 20vw;
+} /* GENERATED 
+ * generator_rules.lg\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.lg\:css */
+
+.lg\:margin-25vw {
+    margin: 25vw;
+}
+
+.lg\:margin-left-25vw {
+    margin-left: 25vw;
+}
+
+.lg\:margin-right-25vw {
+    margin-right: 25vw;
+}
+
+.lg\:margin-top-25vw {
+    margin-top: 25vw;
+}
+
+.lg\:margin-bottom-25vw {
+    margin-bottom: 25vw;
+}
+
+/* Width */
+.lg\:width-25vw {
+    width: 25vw;
+}
+
+.lg\:min-width-25vw {
+    min-width: 25vw;
+}
+
+.lg\:max-width-25vw {
+    max-width: 25vw;
+}
+
+/* Height */
+
+.lg\:height-25vw {
+    height: 25vw;
+}
+
+.lg\:min-height-25vw {
+    min-height: 25vw;
+}
+
+.lg\:max-height-25vw {
+    max-height: 25vw;
+} /* GENERATED 
+ * generator_rules.lg\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.lg\:css */
+
+.lg\:margin-33vw {
+    margin: 33vw;
+}
+
+.lg\:margin-left-33vw {
+    margin-left: 33vw;
+}
+
+.lg\:margin-right-33vw {
+    margin-right: 33vw;
+}
+
+.lg\:margin-top-33vw {
+    margin-top: 33vw;
+}
+
+.lg\:margin-bottom-33vw {
+    margin-bottom: 33vw;
+}
+
+/* Width */
+.lg\:width-33vw {
+    width: 33vw;
+}
+
+.lg\:min-width-33vw {
+    min-width: 33vw;
+}
+
+.lg\:max-width-33vw {
+    max-width: 33vw;
+}
+
+/* Height */
+
+.lg\:height-33vw {
+    height: 33vw;
+}
+
+.lg\:min-height-33vw {
+    min-height: 33vw;
+}
+
+.lg\:max-height-33vw {
+    max-height: 33vw;
+} /* GENERATED 
+ * generator_rules.lg\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.lg\:css */
+
+.lg\:margin-50vw {
+    margin: 50vw;
+}
+
+.lg\:margin-left-50vw {
+    margin-left: 50vw;
+}
+
+.lg\:margin-right-50vw {
+    margin-right: 50vw;
+}
+
+.lg\:margin-top-50vw {
+    margin-top: 50vw;
+}
+
+.lg\:margin-bottom-50vw {
+    margin-bottom: 50vw;
+}
+
+/* Width */
+.lg\:width-50vw {
+    width: 50vw;
+}
+
+.lg\:min-width-50vw {
+    min-width: 50vw;
+}
+
+.lg\:max-width-50vw {
+    max-width: 50vw;
+}
+
+/* Height */
+
+.lg\:height-50vw {
+    height: 50vw;
+}
+
+.lg\:min-height-50vw {
+    min-height: 50vw;
+}
+
+.lg\:max-height-50vw {
+    max-height: 50vw;
+} /* GENERATED 
+ * generator_rules.lg\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.lg\:css */
+
+.lg\:margin-75vw {
+    margin: 75vw;
+}
+
+.lg\:margin-left-75vw {
+    margin-left: 75vw;
+}
+
+.lg\:margin-right-75vw {
+    margin-right: 75vw;
+}
+
+.lg\:margin-top-75vw {
+    margin-top: 75vw;
+}
+
+.lg\:margin-bottom-75vw {
+    margin-bottom: 75vw;
+}
+
+/* Width */
+.lg\:width-75vw {
+    width: 75vw;
+}
+
+.lg\:min-width-75vw {
+    min-width: 75vw;
+}
+
+.lg\:max-width-75vw {
+    max-width: 75vw;
+}
+
+/* Height */
+
+.lg\:height-75vw {
+    height: 75vw;
+}
+
+.lg\:min-height-75vw {
+    min-height: 75vw;
+}
+
+.lg\:max-height-75vw {
+    max-height: 75vw;
+} /* GENERATED 
+ * generator_rules.lg\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.lg\:css */
+
+.lg\:margin-5vh {
+    margin: 5vh;
+}
+
+.lg\:margin-left-5vh {
+    margin-left: 5vh;
+}
+
+.lg\:margin-right-5vh {
+    margin-right: 5vh;
+}
+
+.lg\:margin-top-5vh {
+    margin-top: 5vh;
+}
+
+.lg\:margin-bottom-5vh {
+    margin-bottom: 5vh;
+}
+
+/* Width */
+.lg\:width-5vh {
+    width: 5vh;
+}
+
+.lg\:min-width-5vh {
+    min-width: 5vh;
+}
+
+.lg\:max-width-5vh {
+    max-width: 5vh;
+}
+
+/* Height */
+
+.lg\:height-5vh {
+    height: 5vh;
+}
+
+.lg\:min-height-5vh {
+    min-height: 5vh;
+}
+
+.lg\:max-height-5vh {
+    max-height: 5vh;
+} /* GENERATED 
+ * generator_rules.lg\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.lg\:css */
+
+.lg\:margin-10vh {
+    margin: 10vh;
+}
+
+.lg\:margin-left-10vh {
+    margin-left: 10vh;
+}
+
+.lg\:margin-right-10vh {
+    margin-right: 10vh;
+}
+
+.lg\:margin-top-10vh {
+    margin-top: 10vh;
+}
+
+.lg\:margin-bottom-10vh {
+    margin-bottom: 10vh;
+}
+
+/* Width */
+.lg\:width-10vh {
+    width: 10vh;
+}
+
+.lg\:min-width-10vh {
+    min-width: 10vh;
+}
+
+.lg\:max-width-10vh {
+    max-width: 10vh;
+}
+
+/* Height */
+
+.lg\:height-10vh {
+    height: 10vh;
+}
+
+.lg\:min-height-10vh {
+    min-height: 10vh;
+}
+
+.lg\:max-height-10vh {
+    max-height: 10vh;
+} /* GENERATED 
+ * generator_rules.lg\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.lg\:css */
+
+.lg\:margin-20vh {
+    margin: 20vh;
+}
+
+.lg\:margin-left-20vh {
+    margin-left: 20vh;
+}
+
+.lg\:margin-right-20vh {
+    margin-right: 20vh;
+}
+
+.lg\:margin-top-20vh {
+    margin-top: 20vh;
+}
+
+.lg\:margin-bottom-20vh {
+    margin-bottom: 20vh;
+}
+
+/* Width */
+.lg\:width-20vh {
+    width: 20vh;
+}
+
+.lg\:min-width-20vh {
+    min-width: 20vh;
+}
+
+.lg\:max-width-20vh {
+    max-width: 20vh;
+}
+
+/* Height */
+
+.lg\:height-20vh {
+    height: 20vh;
+}
+
+.lg\:min-height-20vh {
+    min-height: 20vh;
+}
+
+.lg\:max-height-20vh {
+    max-height: 20vh;
+} /* GENERATED 
+ * generator_rules.lg\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.lg\:css */
+
+.lg\:margin-25vh {
+    margin: 25vh;
+}
+
+.lg\:margin-left-25vh {
+    margin-left: 25vh;
+}
+
+.lg\:margin-right-25vh {
+    margin-right: 25vh;
+}
+
+.lg\:margin-top-25vh {
+    margin-top: 25vh;
+}
+
+.lg\:margin-bottom-25vh {
+    margin-bottom: 25vh;
+}
+
+/* Width */
+.lg\:width-25vh {
+    width: 25vh;
+}
+
+.lg\:min-width-25vh {
+    min-width: 25vh;
+}
+
+.lg\:max-width-25vh {
+    max-width: 25vh;
+}
+
+/* Height */
+
+.lg\:height-25vh {
+    height: 25vh;
+}
+
+.lg\:min-height-25vh {
+    min-height: 25vh;
+}
+
+.lg\:max-height-25vh {
+    max-height: 25vh;
+} /* GENERATED 
+ * generator_rules.lg\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.lg\:css */
+
+.lg\:margin-33vh {
+    margin: 33vh;
+}
+
+.lg\:margin-left-33vh {
+    margin-left: 33vh;
+}
+
+.lg\:margin-right-33vh {
+    margin-right: 33vh;
+}
+
+.lg\:margin-top-33vh {
+    margin-top: 33vh;
+}
+
+.lg\:margin-bottom-33vh {
+    margin-bottom: 33vh;
+}
+
+/* Width */
+.lg\:width-33vh {
+    width: 33vh;
+}
+
+.lg\:min-width-33vh {
+    min-width: 33vh;
+}
+
+.lg\:max-width-33vh {
+    max-width: 33vh;
+}
+
+/* Height */
+
+.lg\:height-33vh {
+    height: 33vh;
+}
+
+.lg\:min-height-33vh {
+    min-height: 33vh;
+}
+
+.lg\:max-height-33vh {
+    max-height: 33vh;
+} /* GENERATED 
+ * generator_rules.lg\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.lg\:css */
+
+.lg\:margin-50vh {
+    margin: 50vh;
+}
+
+.lg\:margin-left-50vh {
+    margin-left: 50vh;
+}
+
+.lg\:margin-right-50vh {
+    margin-right: 50vh;
+}
+
+.lg\:margin-top-50vh {
+    margin-top: 50vh;
+}
+
+.lg\:margin-bottom-50vh {
+    margin-bottom: 50vh;
+}
+
+/* Width */
+.lg\:width-50vh {
+    width: 50vh;
+}
+
+.lg\:min-width-50vh {
+    min-width: 50vh;
+}
+
+.lg\:max-width-50vh {
+    max-width: 50vh;
+}
+
+/* Height */
+
+.lg\:height-50vh {
+    height: 50vh;
+}
+
+.lg\:min-height-50vh {
+    min-height: 50vh;
+}
+
+.lg\:max-height-50vh {
+    max-height: 50vh;
+} /* GENERATED 
+ * generator_rules.lg\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.lg\:css */
+
+.lg\:margin-75vh {
+    margin: 75vh;
+}
+
+.lg\:margin-left-75vh {
+    margin-left: 75vh;
+}
+
+.lg\:margin-right-75vh {
+    margin-right: 75vh;
+}
+
+.lg\:margin-top-75vh {
+    margin-top: 75vh;
+}
+
+.lg\:margin-bottom-75vh {
+    margin-bottom: 75vh;
+}
+
+/* Width */
+.lg\:width-75vh {
+    width: 75vh;
+}
+
+.lg\:min-width-75vh {
+    min-width: 75vh;
+}
+
+.lg\:max-width-75vh {
+    max-width: 75vh;
+}
+
+/* Height */
+
+.lg\:height-75vh {
+    height: 75vh;
+}
+
+.lg\:min-height-75vh {
+    min-height: 75vh;
+}
+
+.lg\:max-height-75vh {
+    max-height: 75vh;
+} /* GENERATED 
+ * generator_rules.lg\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.lg\:css */
+
+.lg\:margin-5px {
+    margin: 5px;
+}
+
+.lg\:margin-left-5px {
+    margin-left: 5px;
+}
+
+.lg\:margin-right-5px {
+    margin-right: 5px;
+}
+
+.lg\:margin-top-5px {
+    margin-top: 5px;
+}
+
+.lg\:margin-bottom-5px {
+    margin-bottom: 5px;
+}
+
+/* Width */
+.lg\:width-5px {
+    width: 5px;
+}
+
+.lg\:min-width-5px {
+    min-width: 5px;
+}
+
+.lg\:max-width-5px {
+    max-width: 5px;
+}
+
+/* Height */
+
+.lg\:height-5px {
+    height: 5px;
+}
+
+.lg\:min-height-5px {
+    min-height: 5px;
+}
+
+.lg\:max-height-5px {
+    max-height: 5px;
+} /* GENERATED 
+ * generator_rules.lg\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.lg\:css */
+
+.lg\:margin-10px {
+    margin: 10px;
+}
+
+.lg\:margin-left-10px {
+    margin-left: 10px;
+}
+
+.lg\:margin-right-10px {
+    margin-right: 10px;
+}
+
+.lg\:margin-top-10px {
+    margin-top: 10px;
+}
+
+.lg\:margin-bottom-10px {
+    margin-bottom: 10px;
+}
+
+/* Width */
+.lg\:width-10px {
+    width: 10px;
+}
+
+.lg\:min-width-10px {
+    min-width: 10px;
+}
+
+.lg\:max-width-10px {
+    max-width: 10px;
+}
+
+/* Height */
+
+.lg\:height-10px {
+    height: 10px;
+}
+
+.lg\:min-height-10px {
+    min-height: 10px;
+}
+
+.lg\:max-height-10px {
+    max-height: 10px;
+} /* GENERATED 
+ * generator_rules.lg\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.lg\:css */
+
+.lg\:margin-1em {
+    margin: 1em;
+}
+
+.lg\:margin-left-1em {
+    margin-left: 1em;
+}
+
+.lg\:margin-right-1em {
+    margin-right: 1em;
+}
+
+.lg\:margin-top-1em {
+    margin-top: 1em;
+}
+
+.lg\:margin-bottom-1em {
+    margin-bottom: 1em;
+}
+
+/* Width */
+.lg\:width-1em {
+    width: 1em;
+}
+
+.lg\:min-width-1em {
+    min-width: 1em;
+}
+
+.lg\:max-width-1em {
+    max-width: 1em;
+}
+
+/* Height */
+
+.lg\:height-1em {
+    height: 1em;
+}
+
+.lg\:min-height-1em {
+    min-height: 1em;
+}
+
+.lg\:max-height-1em {
+    max-height: 1em;
+} /* GENERATED 
+ * generator_rules.lg\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.lg\:css */
+
+.lg\:margin-2em {
+    margin: 2em;
+}
+
+.lg\:margin-left-2em {
+    margin-left: 2em;
+}
+
+.lg\:margin-right-2em {
+    margin-right: 2em;
+}
+
+.lg\:margin-top-2em {
+    margin-top: 2em;
+}
+
+.lg\:margin-bottom-2em {
+    margin-bottom: 2em;
+}
+
+/* Width */
+.lg\:width-2em {
+    width: 2em;
+}
+
+.lg\:min-width-2em {
+    min-width: 2em;
+}
+
+.lg\:max-width-2em {
+    max-width: 2em;
+}
+
+/* Height */
+
+.lg\:height-2em {
+    height: 2em;
+}
+
+.lg\:min-height-2em {
+    min-height: 2em;
+}
+
+.lg\:max-height-2em {
+    max-height: 2em;
+} /* GENERATED 
+ * generator_rules.lg\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.lg\:css */
+
+.lg\:margin-20pct {
+    margin: 20%;
+}
+
+.lg\:margin-left-20pct {
+    margin-left: 20%;
+}
+
+.lg\:margin-right-20pct {
+    margin-right: 20%;
+}
+
+.lg\:margin-top-20pct {
+    margin-top: 20%;
+}
+
+.lg\:margin-bottom-20pct {
+    margin-bottom: 20%;
+}
+
+/* Width */
+.lg\:width-20pct {
+    width: 20%;
+}
+
+.lg\:min-width-20pct {
+    min-width: 20%;
+}
+
+.lg\:max-width-20pct {
+    max-width: 20%;
+}
+
+/* Height */
+
+.lg\:height-20pct {
+    height: 20%;
+}
+
+.lg\:min-height-20pct {
+    min-height: 20%;
+}
+
+.lg\:max-height-20pct {
+    max-height: 20%;
+} /* GENERATED 
+ * generator_rules.lg\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.lg\:css */
+
+.lg\:margin-25pct {
+    margin: 25%;
+}
+
+.lg\:margin-left-25pct {
+    margin-left: 25%;
+}
+
+.lg\:margin-right-25pct {
+    margin-right: 25%;
+}
+
+.lg\:margin-top-25pct {
+    margin-top: 25%;
+}
+
+.lg\:margin-bottom-25pct {
+    margin-bottom: 25%;
+}
+
+/* Width */
+.lg\:width-25pct {
+    width: 25%;
+}
+
+.lg\:min-width-25pct {
+    min-width: 25%;
+}
+
+.lg\:max-width-25pct {
+    max-width: 25%;
+}
+
+/* Height */
+
+.lg\:height-25pct {
+    height: 25%;
+}
+
+.lg\:min-height-25pct {
+    min-height: 25%;
+}
+
+.lg\:max-height-25pct {
+    max-height: 25%;
+} /* GENERATED 
+ * generator_rules.lg\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.lg\:css */
+
+.lg\:margin-30pct {
+    margin: 30%;
+}
+
+.lg\:margin-left-30pct {
+    margin-left: 30%;
+}
+
+.lg\:margin-right-30pct {
+    margin-right: 30%;
+}
+
+.lg\:margin-top-30pct {
+    margin-top: 30%;
+}
+
+.lg\:margin-bottom-30pct {
+    margin-bottom: 30%;
+}
+
+/* Width */
+.lg\:width-30pct {
+    width: 30%;
+}
+
+.lg\:min-width-30pct {
+    min-width: 30%;
+}
+
+.lg\:max-width-30pct {
+    max-width: 30%;
+}
+
+/* Height */
+
+.lg\:height-30pct {
+    height: 30%;
+}
+
+.lg\:min-height-30pct {
+    min-height: 30%;
+}
+
+.lg\:max-height-30pct {
+    max-height: 30%;
+} /* GENERATED 
+ * generator_rules.lg\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.lg\:css */
+
+.lg\:margin-40pct {
+    margin: 40%;
+}
+
+.lg\:margin-left-40pct {
+    margin-left: 40%;
+}
+
+.lg\:margin-right-40pct {
+    margin-right: 40%;
+}
+
+.lg\:margin-top-40pct {
+    margin-top: 40%;
+}
+
+.lg\:margin-bottom-40pct {
+    margin-bottom: 40%;
+}
+
+/* Width */
+.lg\:width-40pct {
+    width: 40%;
+}
+
+.lg\:min-width-40pct {
+    min-width: 40%;
+}
+
+.lg\:max-width-40pct {
+    max-width: 40%;
+}
+
+/* Height */
+
+.lg\:height-40pct {
+    height: 40%;
+}
+
+.lg\:min-height-40pct {
+    min-height: 40%;
+}
+
+.lg\:max-height-40pct {
+    max-height: 40%;
+} /* GENERATED 
+ * generator_rules.lg\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.lg\:css */
+
+.lg\:margin-50pct {
+    margin: 50%;
+}
+
+.lg\:margin-left-50pct {
+    margin-left: 50%;
+}
+
+.lg\:margin-right-50pct {
+    margin-right: 50%;
+}
+
+.lg\:margin-top-50pct {
+    margin-top: 50%;
+}
+
+.lg\:margin-bottom-50pct {
+    margin-bottom: 50%;
+}
+
+/* Width */
+.lg\:width-50pct {
+    width: 50%;
+}
+
+.lg\:min-width-50pct {
+    min-width: 50%;
+}
+
+.lg\:max-width-50pct {
+    max-width: 50%;
+}
+
+/* Height */
+
+.lg\:height-50pct {
+    height: 50%;
+}
+
+.lg\:min-height-50pct {
+    min-height: 50%;
+}
+
+.lg\:max-height-50pct {
+    max-height: 50%;
+} /* GENERATED 
+ * generator_rules.lg\:css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.lg\:css */
+
+.lg\:margin-auto {
+    margin: auto;
+}
+
+.lg\:margin-left-auto {
+    margin-left: auto;
+}
+
+.lg\:margin-right-auto {
+    margin-right: auto;
+}
+
+.lg\:margin-top-auto {
+    margin-top: auto;
+}
+
+.lg\:margin-bottom-auto {
+    margin-bottom: auto;
+}
+
+/* Width */
+.lg\:width-auto {
+    width: auto;
+}
+
+.lg\:min-width-auto {
+    min-width: auto;
+}
+
+.lg\:max-width-auto {
+    max-width: auto;
+}
+
+/* Height */
+
+.lg\:height-auto {
+    height: auto;
+}
+
+.lg\:min-height-auto {
+    min-height: auto;
+}
+
+.lg\:max-height-auto {
+    max-height: auto;
+}
+}
+/*
+ * fixed_rules.css
+ * Contains all of the fixed rules
+ */
+/* Generic colouring rules */
+
+.fg-primary {
+    color: var(--v-colour-primary);
+}
+
+.fg-secondary {
+    color: var(--v-colour-secondary);
+}
+
+.fg-tertiary {
+    color: var(--v-colour-tertiary);
+}
+
+.bg-primary {
+    background-color: var(--v-colour-primary);
+}
+
+.bg-secondary {
+    background-color: var(--v-colour-secondary);
+}
+
+.bg-tertiary {
+    background-color: var(--v-colour-tertiary);
+}
+
+/* Margins */
+.margin-auto {
+    margin: auto;
+}
+
+.margin-left-auto {
+    margin-left: auto;
+}
+
+.margin-right-auto {
+    margin-right: auto;
+}
+
+.margin-top-auto {
+    margin-top: auto;
+}
+
+.margin-bottom-auto {
+    margin-top: auto;
+}
+
+.margin-none {
+    margin: 0px;
+}
+
+.margin-left-none {
+    margin-left: 0px;
+}
+
+.margin-right-none {
+    margin-right: 0px;
+}
+
+.margin-top-none {
+    margin-top: 0px;
+}
+
+.margin-bottom-none {
+    margin-bottom: 0px;
+}
+
+/* Custom UI Element classes */
+
+.link {
+    color: var(--v-colour-tertiary);
+}
+
+
+.button-wrapper {
+    margin: 5px;
+}
+
+.button {
+    /* border: solid white 2px; */
+    border-radius: 1em;
+    border: solid var(--v-colour-tertiary) 2px;
+    line-height: 2;
+    cursor: grab;
+    margin: 1rem;
+}
+
+.button:hover {
+    background-color: rgba(225, 216, 216, 0.312);
+}
+
+.button-text {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+img.image-round {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+img.profile-img-small {
+    width: 50px;
+    height: 50px;
+}
+
+img.profile-img-medium {
+    width: 100px;
+    height: 100px;
+}
+
+img.profile-img-large {
+    width: 150px;
+    height: 150px;
+}
+
+/* Borders */
+.border-primary-2px {
+    border: solid var(--v-colour-primary) 2px;
+}
+
+.border-secondary-2px {
+    border: solid var(--v-colour-secondary) 2px;
+}
+
+.border-tertiary-2px {
+    border: solid var(--v-colour-tertiary) 2px;
+}
+
+.border-white-2px {
+    border: solid white 2px;
+}
+
+/* Layouts */
+
+.inline-block {
+    display: inline-block;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.container-flex {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.flex-justifty-left {
+    justify-content: left;
+}
+
+.flex-justify-right {
+    justify-content: right;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-align-start {
+    align-items: flex-start;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+} /* GENERATED 
+ * generator_rules.css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.css */
+
+.margin-5vw {
+    margin: 5vw;
+}
+
+.margin-left-5vw {
+    margin-left: 5vw;
+}
+
+.margin-right-5vw {
+    margin-right: 5vw;
+}
+
+.margin-top-5vw {
+    margin-top: 5vw;
+}
+
+.margin-bottom-5vw {
+    margin-bottom: 5vw;
+}
+
+/* Width */
+.width-5vw {
+    width: 5vw;
+}
+
+.min-width-5vw {
+    min-width: 5vw;
+}
+
+.max-width-5vw {
+    max-width: 5vw;
+}
+
+/* Height */
+
+.height-5vw {
+    height: 5vw;
+}
+
+.min-height-5vw {
+    min-height: 5vw;
+}
+
+.max-height-5vw {
+    max-height: 5vw;
+} /* GENERATED 
+ * generator_rules.css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.css */
+
+.margin-10vw {
+    margin: 10vw;
+}
+
+.margin-left-10vw {
+    margin-left: 10vw;
+}
+
+.margin-right-10vw {
+    margin-right: 10vw;
+}
+
+.margin-top-10vw {
+    margin-top: 10vw;
+}
+
+.margin-bottom-10vw {
+    margin-bottom: 10vw;
+}
+
+/* Width */
+.width-10vw {
+    width: 10vw;
+}
+
+.min-width-10vw {
+    min-width: 10vw;
+}
+
+.max-width-10vw {
+    max-width: 10vw;
+}
+
+/* Height */
+
+.height-10vw {
+    height: 10vw;
+}
+
+.min-height-10vw {
+    min-height: 10vw;
+}
+
+.max-height-10vw {
+    max-height: 10vw;
+} /* GENERATED 
+ * generator_rules.css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.css */
+
+.margin-20vw {
+    margin: 20vw;
+}
+
+.margin-left-20vw {
+    margin-left: 20vw;
+}
+
+.margin-right-20vw {
+    margin-right: 20vw;
+}
+
+.margin-top-20vw {
+    margin-top: 20vw;
+}
+
+.margin-bottom-20vw {
+    margin-bottom: 20vw;
+}
+
+/* Width */
+.width-20vw {
+    width: 20vw;
+}
+
+.min-width-20vw {
+    min-width: 20vw;
+}
+
+.max-width-20vw {
+    max-width: 20vw;
+}
+
+/* Height */
+
+.height-20vw {
+    height: 20vw;
+}
+
+.min-height-20vw {
+    min-height: 20vw;
+}
+
+.max-height-20vw {
+    max-height: 20vw;
+} /* GENERATED 
+ * generator_rules.css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.css */
+
+.margin-25vw {
+    margin: 25vw;
+}
+
+.margin-left-25vw {
+    margin-left: 25vw;
+}
+
+.margin-right-25vw {
+    margin-right: 25vw;
+}
+
+.margin-top-25vw {
+    margin-top: 25vw;
+}
+
+.margin-bottom-25vw {
+    margin-bottom: 25vw;
+}
+
+/* Width */
+.width-25vw {
+    width: 25vw;
+}
+
+.min-width-25vw {
+    min-width: 25vw;
+}
+
+.max-width-25vw {
+    max-width: 25vw;
+}
+
+/* Height */
+
+.height-25vw {
+    height: 25vw;
+}
+
+.min-height-25vw {
+    min-height: 25vw;
+}
+
+.max-height-25vw {
+    max-height: 25vw;
+} /* GENERATED 
+ * generator_rules.css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.css */
+
+.margin-33vw {
+    margin: 33vw;
+}
+
+.margin-left-33vw {
+    margin-left: 33vw;
+}
+
+.margin-right-33vw {
+    margin-right: 33vw;
+}
+
+.margin-top-33vw {
+    margin-top: 33vw;
+}
+
+.margin-bottom-33vw {
+    margin-bottom: 33vw;
+}
+
+/* Width */
+.width-33vw {
+    width: 33vw;
+}
+
+.min-width-33vw {
+    min-width: 33vw;
+}
+
+.max-width-33vw {
+    max-width: 33vw;
+}
+
+/* Height */
+
+.height-33vw {
+    height: 33vw;
+}
+
+.min-height-33vw {
+    min-height: 33vw;
+}
+
+.max-height-33vw {
+    max-height: 33vw;
+} /* GENERATED 
+ * generator_rules.css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.css */
+
+.margin-50vw {
+    margin: 50vw;
+}
+
+.margin-left-50vw {
+    margin-left: 50vw;
+}
+
+.margin-right-50vw {
+    margin-right: 50vw;
+}
+
+.margin-top-50vw {
+    margin-top: 50vw;
+}
+
+.margin-bottom-50vw {
+    margin-bottom: 50vw;
+}
+
+/* Width */
+.width-50vw {
+    width: 50vw;
+}
+
+.min-width-50vw {
+    min-width: 50vw;
+}
+
+.max-width-50vw {
+    max-width: 50vw;
+}
+
+/* Height */
+
+.height-50vw {
+    height: 50vw;
+}
+
+.min-height-50vw {
+    min-height: 50vw;
+}
+
+.max-height-50vw {
+    max-height: 50vw;
+} /* GENERATED 
+ * generator_rules.css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.css */
+
+.margin-75vw {
+    margin: 75vw;
+}
+
+.margin-left-75vw {
+    margin-left: 75vw;
+}
+
+.margin-right-75vw {
+    margin-right: 75vw;
+}
+
+.margin-top-75vw {
+    margin-top: 75vw;
+}
+
+.margin-bottom-75vw {
+    margin-bottom: 75vw;
+}
+
+/* Width */
+.width-75vw {
+    width: 75vw;
+}
+
+.min-width-75vw {
+    min-width: 75vw;
+}
+
+.max-width-75vw {
+    max-width: 75vw;
+}
+
+/* Height */
+
+.height-75vw {
+    height: 75vw;
+}
+
+.min-height-75vw {
+    min-height: 75vw;
+}
+
+.max-height-75vw {
+    max-height: 75vw;
+} /* GENERATED 
+ * generator_rules.css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.css */
+
+.margin-5vh {
+    margin: 5vh;
+}
+
+.margin-left-5vh {
+    margin-left: 5vh;
+}
+
+.margin-right-5vh {
+    margin-right: 5vh;
+}
+
+.margin-top-5vh {
+    margin-top: 5vh;
+}
+
+.margin-bottom-5vh {
+    margin-bottom: 5vh;
+}
+
+/* Width */
+.width-5vh {
+    width: 5vh;
+}
+
+.min-width-5vh {
+    min-width: 5vh;
+}
+
+.max-width-5vh {
+    max-width: 5vh;
+}
+
+/* Height */
+
+.height-5vh {
+    height: 5vh;
+}
+
+.min-height-5vh {
+    min-height: 5vh;
+}
+
+.max-height-5vh {
+    max-height: 5vh;
+} /* GENERATED 
+ * generator_rules.css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.css */
+
+.margin-10vh {
+    margin: 10vh;
+}
+
+.margin-left-10vh {
+    margin-left: 10vh;
+}
+
+.margin-right-10vh {
+    margin-right: 10vh;
+}
+
+.margin-top-10vh {
+    margin-top: 10vh;
+}
+
+.margin-bottom-10vh {
+    margin-bottom: 10vh;
+}
+
+/* Width */
+.width-10vh {
+    width: 10vh;
+}
+
+.min-width-10vh {
+    min-width: 10vh;
+}
+
+.max-width-10vh {
+    max-width: 10vh;
+}
+
+/* Height */
+
+.height-10vh {
+    height: 10vh;
+}
+
+.min-height-10vh {
+    min-height: 10vh;
+}
+
+.max-height-10vh {
+    max-height: 10vh;
+} /* GENERATED 
+ * generator_rules.css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.css */
+
+.margin-20vh {
+    margin: 20vh;
+}
+
+.margin-left-20vh {
+    margin-left: 20vh;
+}
+
+.margin-right-20vh {
+    margin-right: 20vh;
+}
+
+.margin-top-20vh {
+    margin-top: 20vh;
+}
+
+.margin-bottom-20vh {
+    margin-bottom: 20vh;
+}
+
+/* Width */
+.width-20vh {
+    width: 20vh;
+}
+
+.min-width-20vh {
+    min-width: 20vh;
+}
+
+.max-width-20vh {
+    max-width: 20vh;
+}
+
+/* Height */
+
+.height-20vh {
+    height: 20vh;
+}
+
+.min-height-20vh {
+    min-height: 20vh;
+}
+
+.max-height-20vh {
+    max-height: 20vh;
+} /* GENERATED 
+ * generator_rules.css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.css */
+
+.margin-25vh {
+    margin: 25vh;
+}
+
+.margin-left-25vh {
+    margin-left: 25vh;
+}
+
+.margin-right-25vh {
+    margin-right: 25vh;
+}
+
+.margin-top-25vh {
+    margin-top: 25vh;
+}
+
+.margin-bottom-25vh {
+    margin-bottom: 25vh;
+}
+
+/* Width */
+.width-25vh {
+    width: 25vh;
+}
+
+.min-width-25vh {
+    min-width: 25vh;
+}
+
+.max-width-25vh {
+    max-width: 25vh;
+}
+
+/* Height */
+
+.height-25vh {
+    height: 25vh;
+}
+
+.min-height-25vh {
+    min-height: 25vh;
+}
+
+.max-height-25vh {
+    max-height: 25vh;
+} /* GENERATED 
+ * generator_rules.css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.css */
+
+.margin-33vh {
+    margin: 33vh;
+}
+
+.margin-left-33vh {
+    margin-left: 33vh;
+}
+
+.margin-right-33vh {
+    margin-right: 33vh;
+}
+
+.margin-top-33vh {
+    margin-top: 33vh;
+}
+
+.margin-bottom-33vh {
+    margin-bottom: 33vh;
+}
+
+/* Width */
+.width-33vh {
+    width: 33vh;
+}
+
+.min-width-33vh {
+    min-width: 33vh;
+}
+
+.max-width-33vh {
+    max-width: 33vh;
+}
+
+/* Height */
+
+.height-33vh {
+    height: 33vh;
+}
+
+.min-height-33vh {
+    min-height: 33vh;
+}
+
+.max-height-33vh {
+    max-height: 33vh;
+} /* GENERATED 
+ * generator_rules.css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.css */
+
+.margin-50vh {
+    margin: 50vh;
+}
+
+.margin-left-50vh {
+    margin-left: 50vh;
+}
+
+.margin-right-50vh {
+    margin-right: 50vh;
+}
+
+.margin-top-50vh {
+    margin-top: 50vh;
+}
+
+.margin-bottom-50vh {
+    margin-bottom: 50vh;
+}
+
+/* Width */
+.width-50vh {
+    width: 50vh;
+}
+
+.min-width-50vh {
+    min-width: 50vh;
+}
+
+.max-width-50vh {
+    max-width: 50vh;
+}
+
+/* Height */
+
+.height-50vh {
+    height: 50vh;
+}
+
+.min-height-50vh {
+    min-height: 50vh;
+}
+
+.max-height-50vh {
+    max-height: 50vh;
+} /* GENERATED 
+ * generator_rules.css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.css */
+
+.margin-75vh {
+    margin: 75vh;
+}
+
+.margin-left-75vh {
+    margin-left: 75vh;
+}
+
+.margin-right-75vh {
+    margin-right: 75vh;
+}
+
+.margin-top-75vh {
+    margin-top: 75vh;
+}
+
+.margin-bottom-75vh {
+    margin-bottom: 75vh;
+}
+
+/* Width */
+.width-75vh {
+    width: 75vh;
+}
+
+.min-width-75vh {
+    min-width: 75vh;
+}
+
+.max-width-75vh {
+    max-width: 75vh;
+}
+
+/* Height */
+
+.height-75vh {
+    height: 75vh;
+}
+
+.min-height-75vh {
+    min-height: 75vh;
+}
+
+.max-height-75vh {
+    max-height: 75vh;
+} /* GENERATED 
+ * generator_rules.css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.css */
+
+.margin-5px {
+    margin: 5px;
+}
+
+.margin-left-5px {
+    margin-left: 5px;
+}
+
+.margin-right-5px {
+    margin-right: 5px;
+}
+
+.margin-top-5px {
+    margin-top: 5px;
+}
+
+.margin-bottom-5px {
+    margin-bottom: 5px;
+}
+
+/* Width */
+.width-5px {
+    width: 5px;
+}
+
+.min-width-5px {
+    min-width: 5px;
+}
+
+.max-width-5px {
+    max-width: 5px;
+}
+
+/* Height */
+
+.height-5px {
+    height: 5px;
+}
+
+.min-height-5px {
+    min-height: 5px;
+}
+
+.max-height-5px {
+    max-height: 5px;
+} /* GENERATED 
+ * generator_rules.css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.css */
+
+.margin-10px {
+    margin: 10px;
+}
+
+.margin-left-10px {
+    margin-left: 10px;
+}
+
+.margin-right-10px {
+    margin-right: 10px;
+}
+
+.margin-top-10px {
+    margin-top: 10px;
+}
+
+.margin-bottom-10px {
+    margin-bottom: 10px;
+}
+
+/* Width */
+.width-10px {
+    width: 10px;
+}
+
+.min-width-10px {
+    min-width: 10px;
+}
+
+.max-width-10px {
+    max-width: 10px;
+}
+
+/* Height */
+
+.height-10px {
+    height: 10px;
+}
+
+.min-height-10px {
+    min-height: 10px;
+}
+
+.max-height-10px {
+    max-height: 10px;
+} /* GENERATED 
+ * generator_rules.css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.css */
+
+.margin-1em {
+    margin: 1em;
+}
+
+.margin-left-1em {
+    margin-left: 1em;
+}
+
+.margin-right-1em {
+    margin-right: 1em;
+}
+
+.margin-top-1em {
+    margin-top: 1em;
+}
+
+.margin-bottom-1em {
+    margin-bottom: 1em;
+}
+
+/* Width */
+.width-1em {
+    width: 1em;
+}
+
+.min-width-1em {
+    min-width: 1em;
+}
+
+.max-width-1em {
+    max-width: 1em;
+}
+
+/* Height */
+
+.height-1em {
+    height: 1em;
+}
+
+.min-height-1em {
+    min-height: 1em;
+}
+
+.max-height-1em {
+    max-height: 1em;
+} /* GENERATED 
+ * generator_rules.css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.css */
+
+.margin-2em {
+    margin: 2em;
+}
+
+.margin-left-2em {
+    margin-left: 2em;
+}
+
+.margin-right-2em {
+    margin-right: 2em;
+}
+
+.margin-top-2em {
+    margin-top: 2em;
+}
+
+.margin-bottom-2em {
+    margin-bottom: 2em;
+}
+
+/* Width */
+.width-2em {
+    width: 2em;
+}
+
+.min-width-2em {
+    min-width: 2em;
+}
+
+.max-width-2em {
+    max-width: 2em;
+}
+
+/* Height */
+
+.height-2em {
+    height: 2em;
+}
+
+.min-height-2em {
+    min-height: 2em;
+}
+
+.max-height-2em {
+    max-height: 2em;
+} /* GENERATED 
+ * generator_rules.css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.css */
+
+.margin-20pct {
+    margin: 20%;
+}
+
+.margin-left-20pct {
+    margin-left: 20%;
+}
+
+.margin-right-20pct {
+    margin-right: 20%;
+}
+
+.margin-top-20pct {
+    margin-top: 20%;
+}
+
+.margin-bottom-20pct {
+    margin-bottom: 20%;
+}
+
+/* Width */
+.width-20pct {
+    width: 20%;
+}
+
+.min-width-20pct {
+    min-width: 20%;
+}
+
+.max-width-20pct {
+    max-width: 20%;
+}
+
+/* Height */
+
+.height-20pct {
+    height: 20%;
+}
+
+.min-height-20pct {
+    min-height: 20%;
+}
+
+.max-height-20pct {
+    max-height: 20%;
+} /* GENERATED 
+ * generator_rules.css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.css */
+
+.margin-25pct {
+    margin: 25%;
+}
+
+.margin-left-25pct {
+    margin-left: 25%;
+}
+
+.margin-right-25pct {
+    margin-right: 25%;
+}
+
+.margin-top-25pct {
+    margin-top: 25%;
+}
+
+.margin-bottom-25pct {
+    margin-bottom: 25%;
+}
+
+/* Width */
+.width-25pct {
+    width: 25%;
+}
+
+.min-width-25pct {
+    min-width: 25%;
+}
+
+.max-width-25pct {
+    max-width: 25%;
+}
+
+/* Height */
+
+.height-25pct {
+    height: 25%;
+}
+
+.min-height-25pct {
+    min-height: 25%;
+}
+
+.max-height-25pct {
+    max-height: 25%;
+} /* GENERATED 
+ * generator_rules.css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.css */
+
+.margin-30pct {
+    margin: 30%;
+}
+
+.margin-left-30pct {
+    margin-left: 30%;
+}
+
+.margin-right-30pct {
+    margin-right: 30%;
+}
+
+.margin-top-30pct {
+    margin-top: 30%;
+}
+
+.margin-bottom-30pct {
+    margin-bottom: 30%;
+}
+
+/* Width */
+.width-30pct {
+    width: 30%;
+}
+
+.min-width-30pct {
+    min-width: 30%;
+}
+
+.max-width-30pct {
+    max-width: 30%;
+}
+
+/* Height */
+
+.height-30pct {
+    height: 30%;
+}
+
+.min-height-30pct {
+    min-height: 30%;
+}
+
+.max-height-30pct {
+    max-height: 30%;
+} /* GENERATED 
+ * generator_rules.css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.css */
+
+.margin-40pct {
+    margin: 40%;
+}
+
+.margin-left-40pct {
+    margin-left: 40%;
+}
+
+.margin-right-40pct {
+    margin-right: 40%;
+}
+
+.margin-top-40pct {
+    margin-top: 40%;
+}
+
+.margin-bottom-40pct {
+    margin-bottom: 40%;
+}
+
+/* Width */
+.width-40pct {
+    width: 40%;
+}
+
+.min-width-40pct {
+    min-width: 40%;
+}
+
+.max-width-40pct {
+    max-width: 40%;
+}
+
+/* Height */
+
+.height-40pct {
+    height: 40%;
+}
+
+.min-height-40pct {
+    min-height: 40%;
+}
+
+.max-height-40pct {
+    max-height: 40%;
+} /* GENERATED 
+ * generator_rules.css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.css */
+
+.margin-50pct {
+    margin: 50%;
+}
+
+.margin-left-50pct {
+    margin-left: 50%;
+}
+
+.margin-right-50pct {
+    margin-right: 50%;
+}
+
+.margin-top-50pct {
+    margin-top: 50%;
+}
+
+.margin-bottom-50pct {
+    margin-bottom: 50%;
+}
+
+/* Width */
+.width-50pct {
+    width: 50%;
+}
+
+.min-width-50pct {
+    min-width: 50%;
+}
+
+.max-width-50pct {
+    max-width: 50%;
+}
+
+/* Height */
+
+.height-50pct {
+    height: 50%;
+}
+
+.min-height-50pct {
+    min-height: 50%;
+}
+
+.max-height-50pct {
+    max-height: 50%;
+} /* GENERATED 
+ * generator_rules.css
+ * The following rules define/have been generated using the size config
+ */
+/* margins.css */
+
+.margin-auto {
+    margin: auto;
+}
+
+.margin-left-auto {
+    margin-left: auto;
+}
+
+.margin-right-auto {
+    margin-right: auto;
+}
+
+.margin-top-auto {
+    margin-top: auto;
+}
+
+.margin-bottom-auto {
+    margin-bottom: auto;
+}
+
+/* Width */
+.width-auto {
+    width: auto;
+}
+
+.min-width-auto {
+    min-width: auto;
+}
+
+.max-width-auto {
+    max-width: auto;
+}
+
+/* Height */
+
+.height-auto {
+    height: auto;
+}
+
+.min-height-auto {
+    min-height: auto;
+}
+
+.max-height-auto {
+    max-height: auto;
+}

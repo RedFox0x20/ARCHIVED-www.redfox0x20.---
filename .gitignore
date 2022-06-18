@@ -1,0 +1,3 @@
+lib/simpleCSS/*
+!lib/simpleCSS/simple.css
+!lib/simpleCSS/simple.min.css
